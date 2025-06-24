@@ -1,0 +1,944 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/23/2025 9:18:45 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="FQSERVER"
+  DTS:CreatorName="FQSERVER\fabri"
+  DTS:DTSID="{FD89F24E-8BAD-4DA1-9B20-E33D2DAFAAEF}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.2"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="LeerExcel"
+  DTS:PackageType="5"
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{78C33356-B427-41BB-B8CE-87111C22A32F}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Lectura cars.csv]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{51B1A6DD-DB78-4216-961E-3824A7E44B8B}"
+      DTS:ObjectName="Lectura cars.csv">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\GitHub\DWVentas2026\cars.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{B4DB7FB2-4A57-4C6C-9158-42902AD49C91}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="name"
+              DTS:DTSID="{8BE01BB2-0C9E-48A7-AD1E-1F34465723C2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="mpg"
+              DTS:DTSID="{2E6C5F1C-80CA-441C-ACEF-D4F2EFC22254}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="cyl"
+              DTS:DTSID="{A9889C0E-E779-4B80-AB77-E2D1E61457D8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="disp"
+              DTS:DTSID="{B3284142-C6A2-466B-8598-C9D753D9FFC7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="hp"
+              DTS:DTSID="{4CE60110-A949-4B05-9BF4-2937B1EAEE2A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="drat"
+              DTS:DTSID="{D67BFA62-B29E-451E-85E6-4F01ED5598C9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="wt"
+              DTS:DTSID="{21ACA859-3043-49A2-8E9B-020171B220D8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="qsec"
+              DTS:DTSID="{97B0678C-98BB-4307-BCB2-14E352694813}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="vs"
+              DTS:DTSID="{926C92A3-DE87-4729-A9D2-D237C684EBF4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="am"
+              DTS:DTSID="{D8133207-9A52-43E6-A6F2-B295EAC7C145}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="gear"
+              DTS:DTSID="{1F3BEACF-EEEF-49AF-9CA8-0F3EF1ECF799}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="carb"
+              DTS:DTSID="{E5F28754-91B8-4027-BE85-82FEAC393CF2}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.test2.sa]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{9BAA7104-A3EF-4616-9E1C-6ED675FAB5AB}"
+      DTS:ObjectName="localhost.test2.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=test2;TrustServerCertificate=True;Application Name=SSIS-LeerExcel-{9BAA7104-A3EF-4616-9E1C-6ED675FAB5AB}localhost.test2.sa;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbrvD2BnwfkeYek7PA3KxwQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACUuZ951Rq/ZtOG1pfMWi5uP8LtlpV24seWCXxAozSs8wAAAAAOgAAAAAIAACAAAACDdyJa4vf0OnRRiUXZ/5peEjv/96zJSUoBZCioYV4ynCAAAAB9Kl7LFzlexw+hRztA9yHMoSSotnL19D4ZRq2c1kh3dUAAAAAi65uKf5YsFYNVtKVRdMWHgs6fYLDcyAdNZ5psTMLZScTYDF7e3PqUR3BsXu9dBFbN24Bitfx9YWXltGbn7jdb</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Cargar Excel en BD"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{B507ECC6-1E71-4A47-95CA-0769A4233283}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Cargar Excel en BD"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Cargar Excel en BD\Cargar en tabla cars"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+              name="Cargar en tabla cars"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The Destination database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."cars"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Cargar Excel en BD\Cargar en tabla cars.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.test2.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.test2.sa]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="ADO NET Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].Columns[id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="id"
+                      externalMetadataColumnId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].ExternalColumns[id]"
+                      lineageId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[id]" />
+                    <inputColumn
+                      refId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].Columns[name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="name"
+                      externalMetadataColumnId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].ExternalColumns[name]"
+                      lineageId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[name]" />
+                    <inputColumn
+                      refId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].Columns[mpg]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="mpg"
+                      externalMetadataColumnId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].ExternalColumns[mpg]"
+                      lineageId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[mpg]" />
+                    <inputColumn
+                      refId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].Columns[cyl]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="cyl"
+                      externalMetadataColumnId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].ExternalColumns[cyl]"
+                      lineageId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[cyl]" />
+                    <inputColumn
+                      refId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].Columns[disp]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="disp"
+                      externalMetadataColumnId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].ExternalColumns[disp]"
+                      lineageId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[disp]" />
+                    <inputColumn
+                      refId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].Columns[hp]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="hp"
+                      externalMetadataColumnId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].ExternalColumns[hp]"
+                      lineageId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[hp]" />
+                    <inputColumn
+                      refId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].Columns[drat]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="drat"
+                      externalMetadataColumnId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].ExternalColumns[drat]"
+                      lineageId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[drat]" />
+                    <inputColumn
+                      refId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].Columns[wt]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="wt"
+                      externalMetadataColumnId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].ExternalColumns[wt]"
+                      lineageId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[wt]" />
+                    <inputColumn
+                      refId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].Columns[qsec]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="qsec"
+                      externalMetadataColumnId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].ExternalColumns[qsec]"
+                      lineageId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[qsec]" />
+                    <inputColumn
+                      refId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].Columns[vs]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="vs"
+                      externalMetadataColumnId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].ExternalColumns[vs]"
+                      lineageId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[vs]" />
+                    <inputColumn
+                      refId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].Columns[am]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="am"
+                      externalMetadataColumnId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].ExternalColumns[am]"
+                      lineageId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[am]" />
+                    <inputColumn
+                      refId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].Columns[gear]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="gear"
+                      externalMetadataColumnId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].ExternalColumns[gear]"
+                      lineageId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[gear]" />
+                    <inputColumn
+                      refId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].Columns[carb]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="carb"
+                      externalMetadataColumnId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].ExternalColumns[carb]"
+                      lineageId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[carb]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].ExternalColumns[id]"
+                      dataType="i4"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].ExternalColumns[name]"
+                      dataType="wstr"
+                      length="100"
+                      name="name" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].ExternalColumns[mpg]"
+                      dataType="r8"
+                      name="mpg" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].ExternalColumns[cyl]"
+                      dataType="i4"
+                      name="cyl" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].ExternalColumns[disp]"
+                      dataType="r8"
+                      name="disp" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].ExternalColumns[hp]"
+                      dataType="i4"
+                      name="hp" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].ExternalColumns[drat]"
+                      dataType="r8"
+                      name="drat" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].ExternalColumns[wt]"
+                      dataType="r8"
+                      name="wt" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].ExternalColumns[qsec]"
+                      dataType="r8"
+                      name="qsec" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].ExternalColumns[vs]"
+                      dataType="i4"
+                      name="vs" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].ExternalColumns[am]"
+                      dataType="i4"
+                      name="am" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].ExternalColumns[gear]"
+                      dataType="ui1"
+                      name="gear" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input].ExternalColumns[carb]"
+                      dataType="ui1"
+                      name="carb" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Cargar Excel en BD\Cargar en tabla cars.Outputs[ADO NET Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="ADO NET Destination Error Output"
+                  synchronousInputId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Cargar Excel en BD\Cargar en tabla cars.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Cargar Excel en BD\Cargar en tabla cars.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Cargar Excel en BD\Cargar en tabla cars.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Cargar Excel en BD\Cargar en tabla cars.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Cargar Excel en BD\Leer cars csv"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Leer cars csv"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Cargar Excel en BD\Leer cars csv.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Lectura cars.csv]"
+                  connectionManagerRefId="Package.ConnectionManagers[Lectura cars.csv]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].ExternalColumns[id]"
+                      length="50"
+                      lineageId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[id]"
+                      name="id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[name]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].ExternalColumns[name]"
+                      length="50"
+                      lineageId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[name]"
+                      name="name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[mpg]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].ExternalColumns[mpg]"
+                      length="50"
+                      lineageId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[mpg]"
+                      name="mpg"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[cyl]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].ExternalColumns[cyl]"
+                      length="50"
+                      lineageId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[cyl]"
+                      name="cyl"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[disp]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].ExternalColumns[disp]"
+                      length="50"
+                      lineageId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[disp]"
+                      name="disp"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[hp]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].ExternalColumns[hp]"
+                      length="50"
+                      lineageId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[hp]"
+                      name="hp"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[drat]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].ExternalColumns[drat]"
+                      length="50"
+                      lineageId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[drat]"
+                      name="drat"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[wt]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].ExternalColumns[wt]"
+                      length="50"
+                      lineageId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[wt]"
+                      name="wt"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[qsec]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].ExternalColumns[qsec]"
+                      length="50"
+                      lineageId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[qsec]"
+                      name="qsec"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[vs]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].ExternalColumns[vs]"
+                      length="50"
+                      lineageId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[vs]"
+                      name="vs"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[am]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].ExternalColumns[am]"
+                      length="50"
+                      lineageId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[am]"
+                      name="am"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[gear]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].ExternalColumns[gear]"
+                      length="50"
+                      lineageId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[gear]"
+                      name="gear"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[carb]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].ExternalColumns[carb]"
+                      length="50"
+                      lineageId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].Columns[carb]"
+                      name="carb"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].ExternalColumns[id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].ExternalColumns[name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="name" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].ExternalColumns[mpg]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="mpg" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].ExternalColumns[cyl]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="cyl" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].ExternalColumns[disp]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="disp" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].ExternalColumns[hp]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="hp" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].ExternalColumns[drat]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="drat" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].ExternalColumns[wt]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="wt" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].ExternalColumns[qsec]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="qsec" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].ExternalColumns[vs]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="vs" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].ExternalColumns[am]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="am" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].ExternalColumns[gear]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="gear" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output].ExternalColumns[carb]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="carb" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Cargar Excel en BD.Paths[Flat File Source Output]"
+              endId="Package\Cargar Excel en BD\Cargar en tabla cars.Inputs[ADO NET Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Cargar Excel en BD\Leer cars csv.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Cargar Excel en BD"
+          TopLeft="161,147" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Cargar Excel en BD">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="144,42"
+          Id="Package\Cargar Excel en BD\Leer cars csv"
+          TopLeft="139,119" />
+        <NodeLayout
+          Size="178,42"
+          Id="Package\Cargar Excel en BD\Cargar en tabla cars"
+          TopLeft="382,295" />
+        <EdgeLayout
+          Id="Package\Cargar Excel en BD.Paths[Flat File Source Output]"
+          TopLeft="211,161">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="260,134"
+              Start="0,0"
+              End="260,126.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,63" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,63"
+                    Point2="0,67"
+                    Point3="4,67" />
+                  <mssgle:LineSegment
+                    End="256,67" />
+                  <mssgle:CubicBezierSegment
+                    Point1="256,67"
+                    Point2="260,67"
+                    Point3="260,71" />
+                  <mssgle:LineSegment
+                    End="260,126.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Cargar Excel en BD\Cargar en tabla cars">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
