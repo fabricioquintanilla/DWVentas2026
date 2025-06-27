@@ -1,0 +1,498 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/26/2025 9:22:56 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="FQSERVER"
+  DTS:CreatorName="FQSERVER\fabri"
+  DTS:DTSID="{BA5C2BF7-1F66-4FA6-896A-D23541471823}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.2"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="DimVendedor"
+  DTS:PackageType="5"
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{35850BC8-4BCD-4817-822C-6D894D1377F8}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.AdventureWorks2022.sa]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{46FCDA5C-847B-494B-9ECB-72FB73E5642C}"
+      DTS:ObjectName="localhost.AdventureWorks2022.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=AdventureWorks2022;Persist Security Info=True;Application Name=SSIS-DimVendedor-{46FCDA5C-847B-494B-9ECB-72FB73E5642C}localhost.AdventureWorks2022.sa;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbrvD2BnwfkeYek7PA3KxwQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABko7P3mWnc2g2R0MJHhNShzMwhfAh5ZnZ6Itfu0sBhVwAAAAAOgAAAAAIAACAAAAD8sxk5lpNx0XZzjOiJqc0MIFIRUXi9CijfR3azX2sALyAAAABkbjJvZwjLITrsa4KAIyPsacWOYNhoCdn22BHl8TLVgUAAAAD3p1VoeTYFMN7fxiGPKdXWCRN2LvxiqyRkOWzMzzOYHKpfEVoP05cdef7zpCyRq6sHWVo0ZrN0tZhoBXmtcj8Y</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.DWVentas20250407.sa]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{5A8C6B76-1D14-480E-A0DA-96699C308DBC}"
+      DTS:ObjectName="localhost.DWVentas20250407.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=DWVentas20250407;Persist Security Info=True;TrustServerCertificate=True;Application Name=SSIS-DimVendedor-{5A8C6B76-1D14-480E-A0DA-96699C308DBC}localhost.DWVentas20250407.sa;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbrvD2BnwfkeYek7PA3KxwQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAJnAU2/qsEDSqOLpL5ECc0mQ0BfkcLWiu1Qm0d6ojJDQAAAAAOgAAAAAIAACAAAABTZSbmJF8uf1FKwmDg6IWr2EjSJiVS1YiCDDXlFl554SAAAABszM6Gd1QRHkRLm9zFsZsAP1HzzCePqEpXUSPwtiY+zkAAAAA0+hIspW3hkz9hoUI+smjXT3ZVfR5kJ/0FMpmEWcAEbaRg/Aac5gBspzV4hRXhluCvnajzHeQBrXISjhhx8l/r</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Llenar DimVendedor"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{FF8E3992-0819-449A-8CA2-47BD84047461}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Llenar DimVendedor"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Llenar DimVendedor\Escribir en DimVendedor"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+              name="Escribir en DimVendedor"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The Destination database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."DimVendedor"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Llenar DimVendedor\Escribir en DimVendedor.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.DWVentas20250407.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.DWVentas20250407.sa]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Llenar DimVendedor\Escribir en DimVendedor.Inputs[ADO NET Destination Input]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="ADO NET Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Llenar DimVendedor\Escribir en DimVendedor.Inputs[ADO NET Destination Input].Columns[VendedorID]"
+                      cachedDataType="i4"
+                      cachedName="VendedorID"
+                      externalMetadataColumnId="Package\Llenar DimVendedor\Escribir en DimVendedor.Inputs[ADO NET Destination Input].ExternalColumns[VendedorID]"
+                      lineageId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Output].Columns[VendedorID]" />
+                    <inputColumn
+                      refId="Package\Llenar DimVendedor\Escribir en DimVendedor.Inputs[ADO NET Destination Input].Columns[PrimerNombre]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="PrimerNombre"
+                      externalMetadataColumnId="Package\Llenar DimVendedor\Escribir en DimVendedor.Inputs[ADO NET Destination Input].ExternalColumns[PrimerNombre]"
+                      lineageId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Output].Columns[PrimerNombre]" />
+                    <inputColumn
+                      refId="Package\Llenar DimVendedor\Escribir en DimVendedor.Inputs[ADO NET Destination Input].Columns[SegundoNombre]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="SegundoNombre"
+                      externalMetadataColumnId="Package\Llenar DimVendedor\Escribir en DimVendedor.Inputs[ADO NET Destination Input].ExternalColumns[SegundoNombre]"
+                      lineageId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Output].Columns[SegundoNombre]" />
+                    <inputColumn
+                      refId="Package\Llenar DimVendedor\Escribir en DimVendedor.Inputs[ADO NET Destination Input].Columns[Apellido]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Apellido"
+                      externalMetadataColumnId="Package\Llenar DimVendedor\Escribir en DimVendedor.Inputs[ADO NET Destination Input].ExternalColumns[Apellido]"
+                      lineageId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Output].Columns[Apellido]" />
+                    <inputColumn
+                      refId="Package\Llenar DimVendedor\Escribir en DimVendedor.Inputs[ADO NET Destination Input].Columns[TipoPersona]"
+                      cachedDataType="wstr"
+                      cachedLength="28"
+                      cachedName="TipoPersona"
+                      externalMetadataColumnId="Package\Llenar DimVendedor\Escribir en DimVendedor.Inputs[ADO NET Destination Input].ExternalColumns[TipoPersona]"
+                      lineageId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Output].Columns[TipoPersona]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimVendedor\Escribir en DimVendedor.Inputs[ADO NET Destination Input].ExternalColumns[VendedorKey]"
+                      dataType="i4"
+                      name="VendedorKey" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimVendedor\Escribir en DimVendedor.Inputs[ADO NET Destination Input].ExternalColumns[VendedorID]"
+                      dataType="i4"
+                      name="VendedorID" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimVendedor\Escribir en DimVendedor.Inputs[ADO NET Destination Input].ExternalColumns[PrimerNombre]"
+                      dataType="wstr"
+                      length="50"
+                      name="PrimerNombre" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimVendedor\Escribir en DimVendedor.Inputs[ADO NET Destination Input].ExternalColumns[SegundoNombre]"
+                      dataType="wstr"
+                      length="50"
+                      name="SegundoNombre" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimVendedor\Escribir en DimVendedor.Inputs[ADO NET Destination Input].ExternalColumns[Apellido]"
+                      dataType="wstr"
+                      length="50"
+                      name="Apellido" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimVendedor\Escribir en DimVendedor.Inputs[ADO NET Destination Input].ExternalColumns[TipoPersona]"
+                      dataType="wstr"
+                      length="50"
+                      name="TipoPersona" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Llenar DimVendedor\Escribir en DimVendedor.Outputs[ADO NET Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="ADO NET Destination Error Output"
+                  synchronousInputId="Package\Llenar DimVendedor\Escribir en DimVendedor.Inputs[ADO NET Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Llenar DimVendedor\Escribir en DimVendedor.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Llenar DimVendedor\Escribir en DimVendedor.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Llenar DimVendedor\Escribir en DimVendedor.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Llenar DimVendedor\Escribir en DimVendedor.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Llenar DimVendedor\Leer Tabla Vendedores"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
+              name="Leer Tabla Vendedores"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement used by the component to extract data."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select sp.BusinessEntityID as VendedorID,
+p.FirstName as PrimerNombre, isnull(p.MiddleName,'') as SegundoNombre,
+p.LastName as Apellido, 
+case PersonType 
+when 'SC' then 'Store Contact'
+when 'IN' then 'Individual (retail) customer'
+when 'SP' then 'Sales person'
+when 'EM' then 'Employee (non-sales)'
+when 'VC' then 'Vendor contact'
+when 'GC' then 'General contact' end as TipoPersona
+from sales.SalesPerson sp
+inner join person.Person p
+on p.BusinessEntityID=sp.BusinessEntityID</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="The Source database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the mode to retrieve external column information"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.AdventureWorks2022.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.AdventureWorks2022.sa]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Output]"
+                  name="ADO NET Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Output].Columns[VendedorID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Output].ExternalColumns[VendedorID]"
+                      lineageId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Output].Columns[VendedorID]"
+                      name="VendedorID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Output].Columns[PrimerNombre]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Output].ExternalColumns[PrimerNombre]"
+                      length="50"
+                      lineageId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Output].Columns[PrimerNombre]"
+                      name="PrimerNombre"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Output].Columns[SegundoNombre]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Output].ExternalColumns[SegundoNombre]"
+                      length="50"
+                      lineageId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Output].Columns[SegundoNombre]"
+                      name="SegundoNombre"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Output].Columns[Apellido]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Output].ExternalColumns[Apellido]"
+                      length="50"
+                      lineageId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Output].Columns[Apellido]"
+                      name="Apellido"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Output].Columns[TipoPersona]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Output].ExternalColumns[TipoPersona]"
+                      length="28"
+                      lineageId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Output].Columns[TipoPersona]"
+                      name="TipoPersona"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Output].ExternalColumns[VendedorID]"
+                      dataType="i4"
+                      name="VendedorID" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Output].ExternalColumns[PrimerNombre]"
+                      dataType="wstr"
+                      length="50"
+                      name="PrimerNombre" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Output].ExternalColumns[SegundoNombre]"
+                      dataType="wstr"
+                      length="50"
+                      name="SegundoNombre" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Output].ExternalColumns[Apellido]"
+                      dataType="wstr"
+                      length="50"
+                      name="Apellido" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Output].ExternalColumns[TipoPersona]"
+                      dataType="wstr"
+                      length="28"
+                      name="TipoPersona" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Error Output]"
+                  isErrorOut="true"
+                  name="ADO NET Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Error Output].Columns[VendedorID]"
+                      dataType="i4"
+                      lineageId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Error Output].Columns[VendedorID]"
+                      name="VendedorID" />
+                    <outputColumn
+                      refId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Error Output].Columns[PrimerNombre]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Error Output].Columns[PrimerNombre]"
+                      name="PrimerNombre" />
+                    <outputColumn
+                      refId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Error Output].Columns[SegundoNombre]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Error Output].Columns[SegundoNombre]"
+                      name="SegundoNombre" />
+                    <outputColumn
+                      refId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Error Output].Columns[Apellido]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Error Output].Columns[Apellido]"
+                      name="Apellido" />
+                    <outputColumn
+                      refId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Error Output].Columns[TipoPersona]"
+                      dataType="wstr"
+                      length="28"
+                      lineageId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Error Output].Columns[TipoPersona]"
+                      name="TipoPersona" />
+                    <outputColumn
+                      refId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Llenar DimVendedor.Paths[ADO NET Source Output]"
+              endId="Package\Llenar DimVendedor\Escribir en DimVendedor.Inputs[ADO NET Destination Input]"
+              name="ADO NET Source Output"
+              startId="Package\Llenar DimVendedor\Leer Tabla Vendedores.Outputs[ADO NET Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="180,42"
+          Id="Package\Llenar DimVendedor"
+          TopLeft="246,199" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Llenar DimVendedor">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="194,42"
+          Id="Package\Llenar DimVendedor\Leer Tabla Vendedores"
+          TopLeft="153,183" />
+        <NodeLayout
+          Size="201,42"
+          Id="Package\Llenar DimVendedor\Escribir en DimVendedor"
+          TopLeft="517,367" />
+        <EdgeLayout
+          Id="Package\Llenar DimVendedor.Paths[ADO NET Source Output]"
+          TopLeft="250,225">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="367.5,142"
+              Start="0,0"
+              End="367.5,134.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,67" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,67"
+                    Point2="0,71"
+                    Point3="4,71" />
+                  <mssgle:LineSegment
+                    End="363.5,71" />
+                  <mssgle:CubicBezierSegment
+                    Point1="363.5,71"
+                    Point2="367.5,71"
+                    Point3="367.5,75" />
+                  <mssgle:LineSegment
+                    End="367.5,134.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Llenar DimVendedor\Leer Tabla Vendedores">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Llenar DimVendedor\Escribir en DimVendedor">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
