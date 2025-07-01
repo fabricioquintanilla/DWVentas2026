@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="DimVendedor"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{35850BC8-4BCD-4817-822C-6D894D1377F8}">
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{125E22FA-93D9-4DA3-B38D-23452B9D7566}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbrvD2BnwfkeYek7PA3KxwQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABko7P3mWnc2g2R0MJHhNShzMwhfAh5ZnZ6Itfu0sBhVwAAAAAOgAAAAAIAACAAAAD8sxk5lpNx0XZzjOiJqc0MIFIRUXi9CijfR3azX2sALyAAAABkbjJvZwjLITrsa4KAIyPsacWOYNhoCdn22BHl8TLVgUAAAAD3p1VoeTYFMN7fxiGPKdXWCRN2LvxiqyRkOWzMzzOYHKpfEVoP05cdef7zpCyRq6sHWVo0ZrN0tZhoBXmtcj8Y</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbrvD2BnwfkeYek7PA3KxwQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAIFYJGpBlAEdY9TAlLZVF8hEMQ99DSiP82/49OyAEtjAAAAAAOgAAAAAIAACAAAADoc9+A+IrX7aNdU1FkRT4uIh2ixmbOkoY+N/3WfdeXqCAAAADzfqJ62cqkcQT+rOHDpCBnpTr5MlGJNilCX3ieEaDukEAAAAAQdySgOCCLIMHyien3Y1QaJwLFynGvd/yebaIIec/OtZ0oZj3jLVxf+F95jvBs/yrJ8FRrBjnHLGEDfIRQ+LZ0</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,13 +42,30 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbrvD2BnwfkeYek7PA3KxwQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAJnAU2/qsEDSqOLpL5ECc0mQ0BfkcLWiu1Qm0d6ojJDQAAAAAOgAAAAAIAACAAAABTZSbmJF8uf1FKwmDg6IWr2EjSJiVS1YiCDDXlFl554SAAAABszM6Gd1QRHkRLm9zFsZsAP1HzzCePqEpXUSPwtiY+zkAAAAA0+hIspW3hkz9hoUI+smjXT3ZVfR5kJ/0FMpmEWcAEbaRg/Aac5gBspzV4hRXhluCvnajzHeQBrXISjhhx8l/r</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbrvD2BnwfkeYek7PA3KxwQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABQzR4TG+KGZJpcNomF0hcPPfSlM3fO/Mh37T4BOknzawAAAAAOgAAAAAIAACAAAADqC1UaXIRtxje8U+apf90CFn0Wwm1RBMr+KhvCHXaXuCAAAADUNxK4utNMgLO1VOZPWAtOHZv2I3cZ4mPEX1vR4Ok2DEAAAADGN8ba1VA17t3FPYu0+aMNIA5A0F7UvifSinrXy6aRhss0/azF2FD2PrBSVetuO9FtO+T0IoZi0GLHYLh+F6tM</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Limpiar DimVendedor"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{53A77E66-450F-4FA1-831E-F0572B308396}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Limpiar DimVendedor"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{5A8C6B76-1D14-480E-A0DA-96699C308DBC}"
+          SQLTask:SqlStatementSource="delete DimVendedor" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Llenar DimVendedor"
       DTS:CreationName="Microsoft.Pipeline"
@@ -409,6 +426,16 @@ on p.BusinessEntityID=sp.BusinessEntityID</property>
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{40CCC1D0-F8F2-4B98-BEFD-BBC5F21D36B7}"
+      DTS:From="Package\Limpiar DimVendedor"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Llenar DimVendedor" />
+  </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
 <!--If you manually edit this section and make a mistake, you can delete it. -->
@@ -420,11 +447,49 @@ on p.BusinessEntityID=sp.BusinessEntityID</property>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="180,42"
           Id="Package\Llenar DimVendedor"
-          TopLeft="246,199" />
+          TopLeft="280,228" />
+        <NodeLayout
+          Size="185,42"
+          Id="Package\Limpiar DimVendedor"
+          TopLeft="211,75" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="303.5,117">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="66.5,111"
+              Start="0,0"
+              End="66.5,103.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,51.5"
+                    Point2="0,55.5"
+                    Point3="4,55.5" />
+                  <mssgle:LineSegment
+                    End="62.5,55.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="62.5,55.5"
+                    Point2="66.5,55.5"
+                    Point3="66.5,59.5" />
+                  <mssgle:LineSegment
+                    End="66.5,103.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -432,7 +497,7 @@ on p.BusinessEntityID=sp.BusinessEntityID</property>
     design-time-name="Package\Llenar DimVendedor">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="194,42"
           Id="Package\Llenar DimVendedor\Leer Tabla Vendedores"
@@ -472,14 +537,16 @@ on p.BusinessEntityID=sp.BusinessEntityID</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Llenar DimVendedor\Leer Tabla Vendedores">
+    design-time-name="Package\Llenar DimVendedor\Escribir en DimVendedor">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -487,7 +554,7 @@ on p.BusinessEntityID=sp.BusinessEntityID</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Llenar DimVendedor\Escribir en DimVendedor">
+    design-time-name="Package\Llenar DimVendedor\Leer Tabla Vendedores">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
