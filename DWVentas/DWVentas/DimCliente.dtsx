@@ -1,0 +1,565 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="7/3/2025 8:55:45 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="FQSERVER"
+  DTS:CreatorName="FQSERVER\fabri"
+  DTS:DTSID="{EE56BF10-169B-4D07-9BAD-0E103E9322F3}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.2"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="DimCliente"
+  DTS:PackageType="5"
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{E8C1124C-894F-410A-B1AA-5FA7D0183345}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.AdventureWorks2022.sa]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{C0F93EA2-2594-442C-874C-0224A39E7EB5}"
+      DTS:ObjectName="localhost.AdventureWorks2022.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=AdventureWorks2022;Persist Security Info=True;Application Name=SSIS-DimCliente-{C0F93EA2-2594-442C-874C-0224A39E7EB5}localhost.AdventureWorks2022.sa;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbrvD2BnwfkeYek7PA3KxwQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAXaR4X3djHROlt6QnhdNsWNHG9TME/XPsbpTJDX0WQywAAAAAOgAAAAAIAACAAAAA1VtXB29A7AjFt/75dcMSvwKcVmLsIjGX8g3OU1CUJ3CAAAACrTgeCP3DW4oON9nzVQkbuTSw1O1X9q8TRNRWjDm9+WUAAAACwueAPNVpXpDGhJ3JNphXU6obAARisM2Pt746NMyCeyT/93t8TRKnyXloynQYW16KwBVBZREo1Zy9t4rUEuAFb</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.DWVentas20250407.sa]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{B09363FA-9DA1-4938-88CE-BB3EBB84B66F}"
+      DTS:ObjectName="localhost.DWVentas20250407.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=DWVentas20250407;Persist Security Info=True;TrustServerCertificate=True;Application Name=SSIS-DimCliente-{B09363FA-9DA1-4938-88CE-BB3EBB84B66F}localhost.DWVentas20250407.sa;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbrvD2BnwfkeYek7PA3KxwQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABq1eLyK6l68z8QMQmKAtBhjZRmaIFs2VWfpE0XQ53J2wAAAAAOgAAAAAIAACAAAAAcb7xX57FX0glY8rycilfsx/s4YejdsKpKhOm4aMNJNyAAAACmk3KPgr4tmx9HVoODFQNeTmZlNLMqpuV7J0DoafdvtUAAAACAPTs/tpwQ1kSEoPj87fjh+ke3IY6iAJgbc5+xarjZaDkARchFWhLKauugKB9iQixf/fDjM9RStSVbQJiTBiG+</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Limpieza DimCliente"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{25ADA940-823D-4F8C-B13A-AEE0FA5EBF8C}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Limpieza DimCliente"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{B09363FA-9DA1-4938-88CE-BB3EBB84B66F}"
+          SQLTask:SqlStatementSource="delete DimCliente" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Llenar DimCliente"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{F99BC9BC-988C-4E10-AFBD-DBA5680DD539}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Llenar DimCliente"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Llenar DimCliente\DimCliente"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+              name="DimCliente"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The Destination database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."DimCliente"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Llenar DimCliente\DimCliente.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.DWVentas20250407.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.DWVentas20250407.sa]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Llenar DimCliente\DimCliente.Inputs[ADO NET Destination Input]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="ADO NET Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Llenar DimCliente\DimCliente.Inputs[ADO NET Destination Input].Columns[PrimerNombre]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="PrimerNombre"
+                      externalMetadataColumnId="Package\Llenar DimCliente\DimCliente.Inputs[ADO NET Destination Input].ExternalColumns[PrimerNombre]"
+                      lineageId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Output].Columns[PrimerNombre]" />
+                    <inputColumn
+                      refId="Package\Llenar DimCliente\DimCliente.Inputs[ADO NET Destination Input].Columns[SegundoNombre]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="SegundoNombre"
+                      externalMetadataColumnId="Package\Llenar DimCliente\DimCliente.Inputs[ADO NET Destination Input].ExternalColumns[SegundoNombre]"
+                      lineageId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Output].Columns[SegundoNombre]" />
+                    <inputColumn
+                      refId="Package\Llenar DimCliente\DimCliente.Inputs[ADO NET Destination Input].Columns[Apellido]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Apellido"
+                      externalMetadataColumnId="Package\Llenar DimCliente\DimCliente.Inputs[ADO NET Destination Input].ExternalColumns[Apellido]"
+                      lineageId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Output].Columns[Apellido]" />
+                    <inputColumn
+                      refId="Package\Llenar DimCliente\DimCliente.Inputs[ADO NET Destination Input].Columns[TipoPersona]"
+                      cachedDataType="wstr"
+                      cachedLength="28"
+                      cachedName="TipoPersona"
+                      externalMetadataColumnId="Package\Llenar DimCliente\DimCliente.Inputs[ADO NET Destination Input].ExternalColumns[TipoPersona]"
+                      lineageId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Output].Columns[TipoPersona]" />
+                    <inputColumn
+                      refId="Package\Llenar DimCliente\DimCliente.Inputs[ADO NET Destination Input].Columns[ClienteID]"
+                      cachedDataType="i4"
+                      cachedName="ClienteID"
+                      externalMetadataColumnId="Package\Llenar DimCliente\DimCliente.Inputs[ADO NET Destination Input].ExternalColumns[ClienteID]"
+                      lineageId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Output].Columns[ClienteID]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimCliente\DimCliente.Inputs[ADO NET Destination Input].ExternalColumns[ClienteKey]"
+                      dataType="i4"
+                      name="ClienteKey" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimCliente\DimCliente.Inputs[ADO NET Destination Input].ExternalColumns[ClienteID]"
+                      dataType="i4"
+                      name="ClienteID" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimCliente\DimCliente.Inputs[ADO NET Destination Input].ExternalColumns[PrimerNombre]"
+                      dataType="wstr"
+                      length="50"
+                      name="PrimerNombre" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimCliente\DimCliente.Inputs[ADO NET Destination Input].ExternalColumns[SegundoNombre]"
+                      dataType="wstr"
+                      length="50"
+                      name="SegundoNombre" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimCliente\DimCliente.Inputs[ADO NET Destination Input].ExternalColumns[Apellido]"
+                      dataType="wstr"
+                      length="50"
+                      name="Apellido" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimCliente\DimCliente.Inputs[ADO NET Destination Input].ExternalColumns[TipoPersona]"
+                      dataType="wstr"
+                      length="50"
+                      name="TipoPersona" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Llenar DimCliente\DimCliente.Outputs[ADO NET Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="ADO NET Destination Error Output"
+                  synchronousInputId="Package\Llenar DimCliente\DimCliente.Inputs[ADO NET Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Llenar DimCliente\DimCliente.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Llenar DimCliente\DimCliente.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Llenar DimCliente\DimCliente.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Llenar DimCliente\DimCliente.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Llenar DimCliente\Leer Clientes"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
+              name="Leer Clientes"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement used by the component to extract data."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select ISNULL(p.FirstName,'CLIENTE DESCONOCIDO') as PrimerNombre,
+ISNULL(p.MiddleName,'CLIENTE DESCONOCIDO') as SegundoNombre,
+ISNULL(p.LastName,'CLIENTE DESCONOCIDO') as Apellido,
+CASE PersonType
+WHEN 'SC' THEN 'Store Contact'
+WHEN 'IN' THEN 'Individual (retail) customer'
+WHEN 'SP' THEN 'Sales person'
+WHEN 'EM' THEN 'Employee (non-sales)'
+WHEN 'VC' THEN 'Vendor contact'
+WHEN 'GC' THEN 'General contact'
+ELSE 'CLIENTE DESCONOCIDO' END as TipoPersona,
+c.CustomerID as ClienteID
+from sales.Customer c
+left outer join person.person p
+on c.PersonID=p.BusinessEntityID</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="The Source database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the mode to retrieve external column information"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Llenar DimCliente\Leer Clientes.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.AdventureWorks2022.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.AdventureWorks2022.sa]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Output]"
+                  name="ADO NET Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Output].Columns[PrimerNombre]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Output].ExternalColumns[PrimerNombre]"
+                      length="50"
+                      lineageId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Output].Columns[PrimerNombre]"
+                      name="PrimerNombre"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Output].Columns[SegundoNombre]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Output].ExternalColumns[SegundoNombre]"
+                      length="50"
+                      lineageId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Output].Columns[SegundoNombre]"
+                      name="SegundoNombre"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Output].Columns[Apellido]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Output].ExternalColumns[Apellido]"
+                      length="50"
+                      lineageId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Output].Columns[Apellido]"
+                      name="Apellido"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Output].Columns[TipoPersona]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Output].ExternalColumns[TipoPersona]"
+                      length="28"
+                      lineageId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Output].Columns[TipoPersona]"
+                      name="TipoPersona"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Output].Columns[ClienteID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Output].ExternalColumns[ClienteID]"
+                      lineageId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Output].Columns[ClienteID]"
+                      name="ClienteID"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Output].ExternalColumns[PrimerNombre]"
+                      dataType="wstr"
+                      length="50"
+                      name="PrimerNombre" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Output].ExternalColumns[SegundoNombre]"
+                      dataType="wstr"
+                      length="50"
+                      name="SegundoNombre" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Output].ExternalColumns[Apellido]"
+                      dataType="wstr"
+                      length="50"
+                      name="Apellido" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Output].ExternalColumns[TipoPersona]"
+                      dataType="wstr"
+                      length="28"
+                      name="TipoPersona" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Output].ExternalColumns[ClienteID]"
+                      dataType="i4"
+                      name="ClienteID" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Error Output]"
+                  isErrorOut="true"
+                  name="ADO NET Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Error Output].Columns[PrimerNombre]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Error Output].Columns[PrimerNombre]"
+                      name="PrimerNombre" />
+                    <outputColumn
+                      refId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Error Output].Columns[SegundoNombre]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Error Output].Columns[SegundoNombre]"
+                      name="SegundoNombre" />
+                    <outputColumn
+                      refId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Error Output].Columns[Apellido]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Error Output].Columns[Apellido]"
+                      name="Apellido" />
+                    <outputColumn
+                      refId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Error Output].Columns[TipoPersona]"
+                      dataType="wstr"
+                      length="28"
+                      lineageId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Error Output].Columns[TipoPersona]"
+                      name="TipoPersona" />
+                    <outputColumn
+                      refId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Error Output].Columns[ClienteID]"
+                      dataType="i4"
+                      lineageId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Error Output].Columns[ClienteID]"
+                      name="ClienteID" />
+                    <outputColumn
+                      refId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Llenar DimCliente.Paths[ADO NET Source Output]"
+              endId="Package\Llenar DimCliente\DimCliente.Inputs[ADO NET Destination Input]"
+              name="ADO NET Source Output"
+              startId="Package\Llenar DimCliente\Leer Clientes.Outputs[ADO NET Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{546B5581-8DF9-45BA-990E-D14514942FD8}"
+      DTS:From="Package\Limpieza DimCliente"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Llenar DimCliente" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="180,42"
+          Id="Package\Limpieza DimCliente"
+          TopLeft="224,103" />
+        <NodeLayout
+          Size="167,42"
+          Id="Package\Llenar DimCliente"
+          TopLeft="379,225" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="314,145">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="148.5,80"
+              Start="0,0"
+              End="148.5,72.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,36"
+                    Point2="0,40"
+                    Point3="4,40" />
+                  <mssgle:LineSegment
+                    End="144.5,40" />
+                  <mssgle:CubicBezierSegment
+                    Point1="144.5,40"
+                    Point2="148.5,40"
+                    Point3="148.5,44" />
+                  <mssgle:LineSegment
+                    End="148.5,72.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Llenar DimCliente">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="144,42"
+          Id="Package\Llenar DimCliente\Leer Clientes"
+          TopLeft="219,169" />
+        <NodeLayout
+          Size="133,42"
+          Id="Package\Llenar DimCliente\DimCliente"
+          TopLeft="427,308" />
+        <EdgeLayout
+          Id="Package\Llenar DimCliente.Paths[ADO NET Source Output]"
+          TopLeft="291,211">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="202.5,97"
+              Start="0,0"
+              End="202.5,89.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,44.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,44.5"
+                    Point2="0,48.5"
+                    Point3="4,48.5" />
+                  <mssgle:LineSegment
+                    End="198.5,48.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="198.5,48.5"
+                    Point2="202.5,48.5"
+                    Point3="202.5,52.5" />
+                  <mssgle:LineSegment
+                    End="202.5,89.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Llenar DimCliente\Leer Clientes">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Llenar DimCliente\DimCliente">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

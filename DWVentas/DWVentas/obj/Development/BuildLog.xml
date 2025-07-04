@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>DWVentas</Name>
-    <LastWriteTime>2025-07-01T03:26:37.3661134Z</LastWriteTime>
+    <LastWriteTime>2025-07-04T03:22:49.9460475Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -19,6 +19,11 @@
     <ProjectBuildItemInfo>
       <Name>DimProducto.dtsx</Name>
       <LastWriteTime>2025-07-01T03:30:59.851118Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>DimCliente.dtsx</Name>
+      <LastWriteTime>2025-07-04T03:22:15.2579348Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
