@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="DimProducto"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{DBFF5187-995B-48E0-A8AD-9C95266F7DF7}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{0F074C22-2DEE-4812-8404-CD304E208E9F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbrvD2BnwfkeYek7PA3KxwQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC+x6JAXQPn2mQKxXOyYA5ZMn4AbnAWmyyd9xFiqYCg7AAAAAAOgAAAAAIAACAAAAAh1shOkwIfvgpjcSmyTJsudhS1TgTK5bLoMB/1G9EgfiAAAAD8ZpQL90v39jg2fl9QsX3ZVTPOvoB1mLhkG2wszOUJ7EAAAACaOgXvbgumZAYyBp52FIRokmAuHFA96yU5XxZ0vB+ey3TkjljFKbQsH3nrbgz/odSTeLFGueUzmPFNfOMSug1N</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbrvD2BnwfkeYek7PA3KxwQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAhez4uby0ESJWmoV1Z3zz7U1UOUT+NJrlDgmVj4TByqAAAAAAOgAAAAAIAACAAAAA2u2oztuu3CycyxZ8QnO1jKRbAZzmDuo6iSAhFiW+VfSAAAACCousQ7F7+uIOjkdNLtGIpLyQGFyqy8ekc6alXhBPq0kAAAADHbeHsY+ZpFXyRsjrtMYFxcMjgZX7ztbE4RMgNpJwPirDR0Ak8qbpj8QjDIdzLUYseAk0E/uvDkrCPL6uEnVnM</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbrvD2BnwfkeYek7PA3KxwQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABDh0E9E+SG3yzgoN0GgoZLNz1tWnbZUv9JrVDqAgBqqwAAAAAOgAAAAAIAACAAAAA5zeek/9ubQEC+jNqQeeh8aA2miUNK1zsk/Bz/Y1phQyAAAACC6B/2+1ZM7fNC5QD22LKn4nU/f7DoJ729Y8PPDcQ6i0AAAACfnza2mmgqB0ZTGMrTqwmsHMarJsvgg+vEdX6Tjmq4uDTEneOKjPBPa1Phv5cNKf/vDsk0RJfMDmzeSEf3jGZl</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbrvD2BnwfkeYek7PA3KxwQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAMVkwMBQT4LDL7ugfaXDbhLhU83kIlvH2TLQSfUmZOBgAAAAAOgAAAAAIAACAAAAAeXGMUDPVwIExpkjyUmRLjZryzcL4bqVoc9O0UTMkOyCAAAAA/hY9hLqEQuHbkoVg7Lep0jFKJf4oItRUiFDYWgev3DEAAAAC33JYrubIaZrmobq1Ldqt1JwR66m0Pjr0hbZcy51R48XRtFjyB7RyvXLZwuLzSWmaeMtL1Rb3LNStWVgnoAHSN</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -63,7 +63,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{A37EBDD8-78EA-44F6-9D8D-1046E89EDE30}"
-          SQLTask:SqlStatementSource="delete DimProducto" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="delete DimProducto;&#xA;DBCC CHECKIDENT('DimProducto', RESEED, 0);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -673,13 +673,13 @@ on pm.ProductModelID=p.ProductModelID</property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="176,42"
-          Id="Package\Llenar DimProducto"
-          TopLeft="288,237" />
-        <NodeLayout
           Size="182,42"
           Id="Package\Limpiar DimProducto"
           TopLeft="184,74" />
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Llenar DimProducto"
+          TopLeft="288,237" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="275,116">
@@ -721,15 +721,15 @@ on pm.ProductModelID=p.ProductModelID</property>
     design-time-name="Package\Llenar DimProducto">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="200,42"
-          Id="Package\Llenar DimProducto\Leer tablas de productos"
-          TopLeft="204,110" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="194,42"
           Id="Package\Llenar DimProducto\Cargar en DimProducto"
           TopLeft="520,315" />
+        <NodeLayout
+          Size="200,42"
+          Id="Package\Llenar DimProducto\Leer tablas de productos"
+          TopLeft="204,110" />
         <EdgeLayout
           Id="Package\Llenar DimProducto.Paths[ADO NET Source Output]"
           TopLeft="304,152">
@@ -761,14 +761,16 @@ on pm.ProductModelID=p.ProductModelID</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Llenar DimProducto\Leer tablas de productos">
+    design-time-name="Package\Llenar DimProducto\Cargar en DimProducto">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -776,7 +778,7 @@ on pm.ProductModelID=p.ProductModelID</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Llenar DimProducto\Cargar en DimProducto">
+    design-time-name="Package\Llenar DimProducto\Leer tablas de productos">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

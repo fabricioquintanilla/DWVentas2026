@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "D:\\GitHub\\DWVentas2026\\DWVentas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{25704420-9A8F-2545-5ADE-180A5DE7E0E4}|DWVentas\\DWVentas.dtproj|D:\\GitHub\\DWVentas2026\\DWVentas\\DWVentas\\DimCliente.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
-      "RelativeMoniker": "D:0:0:{25704420-9A8F-2545-5ADE-180A5DE7E0E4}|DWVentas\\DWVentas.dtproj|solutionrelative:DWVentas\\DimCliente.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25704420-9A8F-2545-5ADE-180A5DE7E0E4}|DWVentas\\DWVentas.dtproj|D:\\GitHub\\DWVentas2026\\DWVentas\\DWVentas\\DimVendedor.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
-      "RelativeMoniker": "D:0:0:{25704420-9A8F-2545-5ADE-180A5DE7E0E4}|DWVentas\\DWVentas.dtproj|solutionrelative:DWVentas\\DimVendedor.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25704420-9A8F-2545-5ADE-180A5DE7E0E4}|DWVentas\\DWVentas.dtproj|D:\\GitHub\\DWVentas2026\\DWVentas\\DWVentas\\DimProducto.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
-      "RelativeMoniker": "D:0:0:{25704420-9A8F-2545-5ADE-180A5DE7E0E4}|DWVentas\\DWVentas.dtproj|solutionrelative:DWVentas\\DimProducto.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25704420-9A8F-2545-5ADE-180A5DE7E0E4}|DWVentas\\DWVentas.dtproj|D:\\GitHub\\DWVentas2026\\DWVentas\\DWVentas\\LeerExcel.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
-      "RelativeMoniker": "D:0:0:{25704420-9A8F-2545-5ADE-180A5DE7E0E4}|DWVentas\\DWVentas.dtproj|solutionrelative:DWVentas\\LeerExcel.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+      "AbsoluteMoniker": "D:0:0:{25704420-9A8F-2545-5ADE-180A5DE7E0E4}|DWVentas\\DWVentas.dtproj|D:\\GitHub\\DWVentas2026\\DWVentas\\DWVentas\\Orquestador.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{25704420-9A8F-2545-5ADE-180A5DE7E0E4}|DWVentas\\DWVentas.dtproj|solutionrelative:DWVentas\\Orquestador.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,49 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DimCliente.dtsx [Design]",
-              "DocumentMoniker": "D:\\GitHub\\DWVentas2026\\DWVentas\\DWVentas\\DimCliente.dtsx",
-              "RelativeDocumentMoniker": "DWVentas\\DimCliente.dtsx",
-              "ToolTip": "D:\\GitHub\\DWVentas2026\\DWVentas\\DWVentas\\DimCliente.dtsx [Design]",
-              "RelativeToolTip": "DWVentas\\DimCliente.dtsx [Design]",
+              "Title": "Orquestador.dtsx [Design]",
+              "DocumentMoniker": "D:\\GitHub\\DWVentas2026\\DWVentas\\DWVentas\\Orquestador.dtsx",
+              "RelativeDocumentMoniker": "DWVentas\\Orquestador.dtsx",
+              "ToolTip": "D:\\GitHub\\DWVentas2026\\DWVentas\\DWVentas\\Orquestador.dtsx [Design]",
+              "RelativeToolTip": "DWVentas\\Orquestador.dtsx [Design]",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFkSURBVDhPjVO/S8NAGH2RtvSPaPeSwUVchS6CexYRJCBYUJC6SEFBBIXiIigKEYRSCC4unQTXDsVipkpbUJHSRTQ2/oimNCTnkOTMXdrqg4Pv\u002B\u002B69ly933wkAoFaqBGPQezdx9/CYO9xZOWU2CPF0aqVKXMcZuY7Kl2R6bomsbZ8sMwYAJvjCKOxtraNW1xTe5N8Gm7sHAIBaXVPC9Vg4KZSaNC7KIs0/jQQW5yUAQPn8gnIwrAM7nYGdzjB5cnIGqwuzDC9AxCDebSPebUdyc8DQWPx1Cx\u002BWQzrG722EtZEOeJgDwOgDukUQSyT5bdagUGrSBU6sW4A7ZNwiHQSHGBa/fANvFuDafZ4eNQgOLSx\u002B/gK06xa6dgpZKY\u002BNswbBlELAz0FRFumXjT7Bq\u002BXFpu31XpRFdJ5M3N73sO9rqMGxehWEI5Ci4puWTqsx\u002BK\u002BNnzAeWSlPxWEDgWGNg//PDLSc8AOMxO8cPcnGpQAAAABJRU5ErkJggg==",
-              "WhenOpened": "2025-07-04T02:55:45.546Z",
+              "WhenOpened": "2025-07-08T03:04:54.319Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DimProducto.dtsx [Design]",
-              "DocumentMoniker": "D:\\GitHub\\DWVentas2026\\DWVentas\\DWVentas\\DimProducto.dtsx",
-              "RelativeDocumentMoniker": "DWVentas\\DimProducto.dtsx",
-              "ToolTip": "D:\\GitHub\\DWVentas2026\\DWVentas\\DWVentas\\DimProducto.dtsx [Design]",
-              "RelativeToolTip": "DWVentas\\DimProducto.dtsx [Design]",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFkSURBVDhPjVO/S8NAGH2RtvSPaPeSwUVchS6CexYRJCBYUJC6SEFBBIXiIigKEYRSCC4unQTXDsVipkpbUJHSRTQ2/oimNCTnkOTMXdrqg4Pv\u002B\u002B69ly933wkAoFaqBGPQezdx9/CYO9xZOWU2CPF0aqVKXMcZuY7Kl2R6bomsbZ8sMwYAJvjCKOxtraNW1xTe5N8Gm7sHAIBaXVPC9Vg4KZSaNC7KIs0/jQQW5yUAQPn8gnIwrAM7nYGdzjB5cnIGqwuzDC9AxCDebSPebUdyc8DQWPx1Cx\u002BWQzrG722EtZEOeJgDwOgDukUQSyT5bdagUGrSBU6sW4A7ZNwiHQSHGBa/fANvFuDafZ4eNQgOLSx\u002B/gK06xa6dgpZKY\u002BNswbBlELAz0FRFumXjT7Bq\u002BXFpu31XpRFdJ5M3N73sO9rqMGxehWEI5Ci4puWTqsx\u002BK\u002BNnzAeWSlPxWEDgWGNg//PDLSc8AOMxO8cPcnGpQAAAABJRU5ErkJggg==",
-              "WhenOpened": "2025-07-01T03:18:52.436Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DimVendedor.dtsx [Design]",
-              "DocumentMoniker": "D:\\GitHub\\DWVentas2026\\DWVentas\\DWVentas\\DimVendedor.dtsx",
-              "RelativeDocumentMoniker": "DWVentas\\DimVendedor.dtsx",
-              "ToolTip": "D:\\GitHub\\DWVentas2026\\DWVentas\\DWVentas\\DimVendedor.dtsx [Design]",
-              "RelativeToolTip": "DWVentas\\DimVendedor.dtsx [Design]",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFkSURBVDhPjVO/S8NAGH2RtvSPaPeSwUVchS6CexYRJCBYUJC6SEFBBIXiIigKEYRSCC4unQTXDsVipkpbUJHSRTQ2/oimNCTnkOTMXdrqg4Pv\u002B\u002B69ly933wkAoFaqBGPQezdx9/CYO9xZOWU2CPF0aqVKXMcZuY7Kl2R6bomsbZ8sMwYAJvjCKOxtraNW1xTe5N8Gm7sHAIBaXVPC9Vg4KZSaNC7KIs0/jQQW5yUAQPn8gnIwrAM7nYGdzjB5cnIGqwuzDC9AxCDebSPebUdyc8DQWPx1Cx\u002BWQzrG722EtZEOeJgDwOgDukUQSyT5bdagUGrSBU6sW4A7ZNwiHQSHGBa/fANvFuDafZ4eNQgOLSx\u002B/gK06xa6dgpZKY\u002BNswbBlELAz0FRFumXjT7Bq\u002BXFpu31XpRFdJ5M3N73sO9rqMGxehWEI5Ci4puWTqsx\u002BK\u002BNnzAeWSlPxWEDgWGNg//PDLSc8AOMxO8cPcnGpQAAAABJRU5ErkJggg==",
-              "WhenOpened": "2025-06-27T03:22:56.234Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LeerExcel.dtsx [Design]",
-              "DocumentMoniker": "D:\\GitHub\\DWVentas2026\\DWVentas\\DWVentas\\LeerExcel.dtsx",
-              "RelativeDocumentMoniker": "DWVentas\\LeerExcel.dtsx",
-              "ToolTip": "D:\\GitHub\\DWVentas2026\\DWVentas\\DWVentas\\LeerExcel.dtsx [Design]",
-              "RelativeToolTip": "DWVentas\\LeerExcel.dtsx [Design]",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFkSURBVDhPjVO/S8NAGH2RtvSPaPeSwUVchS6CexYRJCBYUJC6SEFBBIXiIigKEYRSCC4unQTXDsVipkpbUJHSRTQ2/oimNCTnkOTMXdrqg4Pv\u002B\u002B69ly933wkAoFaqBGPQezdx9/CYO9xZOWU2CPF0aqVKXMcZuY7Kl2R6bomsbZ8sMwYAJvjCKOxtraNW1xTe5N8Gm7sHAIBaXVPC9Vg4KZSaNC7KIs0/jQQW5yUAQPn8gnIwrAM7nYGdzjB5cnIGqwuzDC9AxCDebSPebUdyc8DQWPx1Cx\u002BWQzrG722EtZEOeJgDwOgDukUQSyT5bdagUGrSBU6sW4A7ZNwiHQSHGBa/fANvFuDafZ4eNQgOLSx\u002B/gK06xa6dgpZKY\u002BNswbBlELAz0FRFumXjT7Bq\u002BXFpu31XpRFdJ5M3N73sO9rqMGxehWEI5Ci4puWTqsx\u002BK\u002BNnzAeWSlPxWEDgWGNg//PDLSc8AOMxO8cPcnGpQAAAABJRU5ErkJggg==",
-              "WhenOpened": "2025-06-27T02:42:08.697Z"
             }
           ]
         }

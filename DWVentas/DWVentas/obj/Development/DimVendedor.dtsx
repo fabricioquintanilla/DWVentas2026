@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="DimVendedor"
   DTS:PackageType="5"
-  DTS:VersionBuild="6"
-  DTS:VersionGUID="{125E22FA-93D9-4DA3-B38D-23452B9D7566}">
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{85BC79AA-0621-4F80-8DF7-4F835DC6B177}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbrvD2BnwfkeYek7PA3KxwQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABubde3fU43Nsl8vBTAT3z2/yWD35Bn34UTxjRU+6S1bQAAAAAOgAAAAAIAACAAAADDtd8osLKVRfby84j7dIrmMF1ty0H0FAVc/W/EW+o3ByAAAABkDQ1pwI5Hj0MHL8dKzfyBImfHma/48OnLqAOGH3kiXEAAAADCDrHfdbiJ+VPtbbDrfabrq2TNpZFqi9+WtDObpX2R9Ot5eH68/mLmlWRTgO1427LXbzUdYQpnl0CMQE/18Wyc</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbrvD2BnwfkeYek7PA3KxwQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAtMtzAMVhI6FTXzsIqMp3P9Qo5VR9uDahTWH7/Q2jn6QAAAAAOgAAAAAIAACAAAADckj5TyM+qSoujubMwZPpyqwUHX5v/MCrX0mHxKcQ79iAAAAAjdqzA68bvHodXLy7Kcs/BfofT9e/vd6pTYagy7Cyl5EAAAABjBqmqtlLx6xTE6qo1Rs0fMoygSene4ExwE4xHDaFcuzzkbbRz4PqlaZ0bE82GGXrvNQR0e1QKnP4K+wqvF8FI</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbrvD2BnwfkeYek7PA3KxwQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABUpVEufoRwZJ7VH9LzVp/3jp7ur8nOPCVE6SY9lIduIQAAAAAOgAAAAAIAACAAAADw9t2KMeg1batt7lss4PnqKBkXBKOe+QIRZIIy6lyDYiAAAAALUgzNNDXMG5iXA3e7gVOm1318u9//OiGZj3ShlqCYw0AAAAAl+AkwJamUdvJcLzwJ3P9xB2LNIF4JH/l8rSeR3LhO1Nt83VsPr8+i3TFQlIHUu5PYcrk90TVOsiM/lmPrTuDi</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbrvD2BnwfkeYek7PA3KxwQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABFpsM9+bj3osBkGqMkgI0f5V8Xz9fPwRAiGc33xcmjWwAAAAAOgAAAAAIAACAAAACwJ3W/9OqaDhVhvxsuMlq+ziGy96Cf+KV0KFVcigfp/iAAAABMt5ab+bBRheerSTt3PyeMdp0XOwLhu567CexmvkUS9UAAAACkH5Zjd1js2uQ/15SjkkZAirKG34Y7bmdRasoNixdIe1fF7pj+sFIqHdBj74MIzMuISECJd3DRfuZ/tMYLEf3G</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -63,7 +63,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{5A8C6B76-1D14-480E-A0DA-96699C308DBC}"
-          SQLTask:SqlStatementSource="delete DimVendedor" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="delete DimVendedor;&#xA;DBCC CHECKIDENT('DimVendedor', RESEED, 0);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -449,13 +449,13 @@ on p.BusinessEntityID=sp.BusinessEntityID</property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="180,42"
-          Id="Package\Llenar DimVendedor"
-          TopLeft="280,228" />
-        <NodeLayout
           Size="185,42"
           Id="Package\Limpiar DimVendedor"
           TopLeft="211,75" />
+        <NodeLayout
+          Size="180,42"
+          Id="Package\Llenar DimVendedor"
+          TopLeft="280,228" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="303.5,117">
