@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>DWVentas</Name>
-    <LastWriteTime>2025-07-08T03:07:19.8305096Z</LastWriteTime>
+    <LastWriteTime>2025-07-22T03:03:53.6858925Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -13,7 +13,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>DimVendedor.dtsx</Name>
-      <LastWriteTime>2025-07-08T03:04:04.0265358Z</LastWriteTime>
+      <LastWriteTime>2025-07-22T03:20:37.0448061Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -38,7 +38,12 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Orquestador.dtsx</Name>
-      <LastWriteTime>2025-07-08T03:07:01.3446832Z</LastWriteTime>
+      <LastWriteTime>2025-07-22T02:37:16.769827Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>FactVentas.dtsx</Name>
+      <LastWriteTime>2025-07-15T03:44:41.7030818Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
