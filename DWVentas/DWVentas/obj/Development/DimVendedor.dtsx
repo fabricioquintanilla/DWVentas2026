@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="DimVendedor"
   DTS:PackageType="5"
-  DTS:VersionBuild="18"
-  DTS:VersionGUID="{FFDE05C2-6A6D-4FE9-BAEE-EA18A86B693E}">
+  DTS:VersionBuild="20"
+  DTS:VersionGUID="{E3EF48D4-8E0C-4940-88E5-5D3D214DAB89}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA9NNLFGZuV84UmNBNmMckiHrTaXe9AMadH/F+VsllWygAAAAAOgAAAAAIAACAAAABKY0LCvH4N5CNFQXzuMTjxYMKw2qwFqlv2+DOS2QAzbiAAAABuLV5WVkVUBWDOAU7CapthcLPDqphx5oZr5UvjotHyi0AAAACTNXOFKXCsZpDX1Km5P7Cc9SiM1vOZ/roT3Di5cbEjpsJK4mX8zbTl0PMoMyT5M8wDu5MLKa8QLHebWxy/z9Ys</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABAbtWni1pRnO4aQ+AmzWqHrV7BwzYy11wPWbes5IfhxAAAAAAOgAAAAAIAACAAAAC4FObEFBQ9IdeHgT2ByKlo0XzvpV9MPucXcR66VG9SLSAAAAB0UqgInm+vtOTJL3MCD42aAmY1qs+IvMKpc4gB8LVeFUAAAAD3IcEH05gL/akk7xHQblhr+19ultc8z31gkI3ZY1gRLzuP0GBGsUtCgVC5xpaDgvemYgO08rLgprwIOUpcACCj</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACR8nSRk9zeGej6G18IDdpiTaDm1r1crk3/VclN9C25DAAAAAAOgAAAAAIAACAAAADABDP3eGijVfe0xwAFtfpxohNoB/vYIWwSCxKxelNYJyAAAADv417zznFSGEo0fPL7Ef8pneomU8t+7ww40hiprOdukUAAAAAz1fY/KVwsbdIBUhp3tEjpjxh6hlave+8U5n8IfsjUtTRg1BUD/sKh8m8eCHOC/hgeOssNrkUjC4eh3xAuVOkz</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAILowjLOfw2z5k7iRtJv7nG4gu8oXHf4sFan0FOIjNdwAAAAAOgAAAAAIAACAAAABOz/2Yf8YVMREVtqB/LNFHfWDFsbueGT2IUif7kvngySAAAAAg0LnkB0EmPZTzs4cO/3sSYH4u117rA4Ydw+v+JyUXgUAAAABXt7LiJXN3ErmX1w0argTJOVMgDt+ARyDyA0Nra+joGlOWoqOUA5Am1LOL1XAJaQjpc75Bb09g10rzLNk5mv8X</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -59,7 +59,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABN4KzDadcaDW36352CjHfFGeoOYrMmhVT3mPvxdJC1GAAAAAAOgAAAAAIAACAAAACEO3cMUhYkv51psHEz8R4ErPiLwkkrFJJEhIS0iVArpCAAAAAMs3JrQlIe0yjadyglhruM/WHng9TSIykURtxePg3bvEAAAADzv/ouVUgOMANzH1FnBtbXI/975Chg/k0KE4pmrk4SqFLvSNHyr69XyBrfLMhPsHGd7+FdNBNNjf3I+WirBieI</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABd9GopqbX+rsIeZ9sNwKBP8tZCSjWErCMbk1Q1dszWCgAAAAAOgAAAAAIAACAAAACmXXG6iZ5V34ieOFxrkS6J0rK33QddN9zehufDYvG70SAAAACtQ6PaFLaYCztIOJfgwfmlkyD29ehhX/LLEgCzuj5OwEAAAAAagZxWT12O5SqFKWp6utabQOqI0LRHpkV97y1R4eIUXSKfdVXxWAoK5XUYvA3+xvUT4KaLZZRFKvuFi9/+n+Yy</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -297,7 +297,7 @@
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimVendedor]) [refTable]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimVendedor] where Activo=1) [refTable]
 where [refTable].[VendedorID] = ?</property>
                 <property
                   dataType="System.Int32"
@@ -308,7 +308,7 @@ where [refTable].[VendedorID] = ?</property>
                   dataType="System.Int32"
                   description="Specifies the cache type of the lookup table."
                   name="CacheType"
-                  typeConverter="CacheType">0</property>
+                  typeConverter="CacheType">1</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
@@ -329,7 +329,7 @@ where [refTable].[VendedorID] = ?</property>
                 <property
                   dataType="System.String"
                   description="Indicates whether to reference metadata in an XML format."
-                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="VendedorKey" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="VendedorID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PrimerNombre" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="SegundoNombre" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Apellido" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="TipoPersona" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="VendedorKey" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="VendedorID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PrimerNombre" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="SegundoNombre" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Apellido" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="TipoPersona" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Activo" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FechaInicio" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FechaFin" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
                 <property
                   containsID="true"
                   dataType="System.String"
@@ -548,6 +548,18 @@ where [refTable].[VendedorID] = ?</property>
                       dataType="wstr"
                       length="50"
                       name="TipoPersona" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimVendedor\Cargar Datos Nuevos DimVendedor.Inputs[ADO NET Destination Input].ExternalColumns[Activo]"
+                      dataType="bool"
+                      name="Activo" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimVendedor\Cargar Datos Nuevos DimVendedor.Inputs[ADO NET Destination Input].ExternalColumns[FechaInicio]"
+                      dataType="dbTimeStamp"
+                      name="FechaInicio" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimVendedor\Cargar Datos Nuevos DimVendedor.Inputs[ADO NET Destination Input].ExternalColumns[FechaFin]"
+                      dataType="dbTimeStamp"
+                      name="FechaFin" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -1035,81 +1047,23 @@ on p.BusinessEntityID=sp.BusinessEntityID</property>
         <NodeLayout
           Size="194,42"
           Id="Package\Llenar DimVendedor\Leer Tabla Vendedores"
-          TopLeft="100,91" />
-        <NodeLayout
-          Size="255,42"
-          Id="Package\Llenar DimVendedor\Cargar Datos Nuevos DimVendedor"
-          TopLeft="171,365" />
+          TopLeft="97,88" />
         <NodeLayout
           Size="200,42"
           Id="Package\Llenar DimVendedor\Buscar Vendedor en DW"
           TopLeft="227,201" />
-        <EdgeLayout
-          Id="Package\Llenar DimVendedor.Paths[ADO NET Source Output]"
-          TopLeft="197,133">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="130,68"
-              Start="0,0"
-              End="130,60.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,30" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,30"
-                    Point2="0,34"
-                    Point3="4,34" />
-                  <mssgle:LineSegment
-                    End="126,34" />
-                  <mssgle:CubicBezierSegment
-                    Point1="126,34"
-                    Point2="130,34"
-                    Point3="130,38" />
-                  <mssgle:LineSegment
-                    End="130,60.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Llenar DimVendedor.Paths[Lookup No Match Output]"
-          TopLeft="296.75,243">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,122"
-              Start="0,0"
-              End="0,114.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,114.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-64.6750390625,49.25,129.350078125,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Llenar DimVendedor\Data Conversion"
+          TopLeft="545,292" />
         <NodeLayout
           Size="253,42"
           Id="Package\Llenar DimVendedor\Actualizar Valores en DimVendedor"
           TopLeft="570,415" />
         <NodeLayout
-          Size="161,42"
-          Id="Package\Llenar DimVendedor\Data Conversion"
-          TopLeft="545,292" />
+          Size="255,42"
+          Id="Package\Llenar DimVendedor\Cargar Datos Nuevos DimVendedor"
+          TopLeft="171,365" />
         <EdgeLayout
           Id="Package\Llenar DimVendedor.Paths[Lookup Match Output]"
           TopLeft="359,243">
@@ -1180,12 +1134,85 @@ on p.BusinessEntityID=sp.BusinessEntityID</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Llenar DimVendedor.Paths[ADO NET Source Output]"
+          TopLeft="194,130">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="133,71"
+              Start="0,0"
+              End="133,63.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.5"
+                    Point2="0,35.5"
+                    Point3="4,35.5" />
+                  <mssgle:LineSegment
+                    End="129,35.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="129,35.5"
+                    Point2="133,35.5"
+                    Point3="133,39.5" />
+                  <mssgle:LineSegment
+                    End="133,63.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Llenar DimVendedor.Paths[Lookup No Match Output]"
+          TopLeft="296.75,243">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,122"
+              Start="0,0"
+              End="0,114.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,114.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-64.6750390625,49.25,129.350078125,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Llenar DimVendedor\Cargar Datos Nuevos DimVendedor">
+    design-time-name="Package\Llenar DimVendedor\Buscar Vendedor en DW">
     <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">true</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimVendedor]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
       <Property>
         <Name>DataSourceViewID</Name>
       </Property>
@@ -1200,23 +1227,8 @@ on p.BusinessEntityID=sp.BusinessEntityID</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Llenar DimVendedor\Buscar Vendedor en DW">
+    design-time-name="Package\Llenar DimVendedor\Cargar Datos Nuevos DimVendedor">
     <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[DimVendedor]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
       <Property>
         <Name>DataSourceViewID</Name>
       </Property>

@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="DimProducto"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{0F074C22-2DEE-4812-8404-CD304E208E9F}">
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{A2BACEC3-33C8-4193-A705-CD5AD262637D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbrvD2BnwfkeYek7PA3KxwQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACbWfJ1bRZb8Al96oXX3kKI76Aty5WZpWcbIRfNFD52zgAAAAAOgAAAAAIAACAAAAD+fVf4M/I98h5CN2YtQ/FDSnUViW/OAUIS2l5pUq8wFiAAAACD8/P9wGmCwK1zKG94DS+2GmcIMQlrx2bEUQ4wTikUn0AAAADu1Ie0O4988lLtSQ1KA7oVxUHk8mfuxF+vyV3wswoFavae5hPuTdl/TXu8cztR/9rZZ5o0vI9qTEzrD25jOABT</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACDU6tNbtkgt3ee6m6XG0OMN2GTX7Mc4j1H1bAB4zvRjgAAAAAOgAAAAAIAACAAAAC3kFAN8mA561uQdSvFVZ4QlRX+za3pX8AYUGqRdaf1/iAAAAAlMr+a1EMLZkyGZVhdX88TyL8qgPORv52HSWHHNWDTUEAAAAAreonnW0GoaoUj/crUj3obpMqByv7ZkMuyVU6UVRWhRM0jW8TOSHtbgUF42h79eyO+6qc1vaujCSyPxDSxN/fO</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbrvD2BnwfkeYek7PA3KxwQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB5xuhK7RvxCzw0LWDYvdbX4XlFO0IWmMCXtrlIAQNzhwAAAAAOgAAAAAIAACAAAADjY7eGZcsGg1SahIw73esXe3x+eVA8HX1vln/0++sJTSAAAABay1UXMgQwPu5E6bTC54r0WcKytu5/ZCpbrQwGOfvwj0AAAABPtHE7iIMGCxGN7g4SDhrLlE0MaSXx9UpsYbDw7yLIrZTZ82g1BuXEbhoPbVCoD2HIvvDJNd6lnVpF4q9lw8pm</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC2qt2pgpsmiIj2IY8nJTtqxFVhGUGcwersCQDFP8yQdgAAAAAOgAAAAAIAACAAAAArd144WbuQHeKw1/i7YxztuDwYHAVreXv8MY/TxME+8SAAAADxfmv3wqqA6quhY0Z+9s6yyprR+M2mEmnKXK33ZT4APUAAAAD/lhDc6j/YPpq1grAIEF1UX5fuGy1h3o+CpthUCMJkMdLI0zgTGbqs636IFrQPMcd8dZ/nZXqU8eRRdsJne1wl</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -264,6 +264,18 @@
                       dataType="wstr"
                       length="50"
                       name="Modelo" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimProducto\Cargar en DimProducto.Inputs[ADO NET Destination Input].ExternalColumns[Activo]"
+                      dataType="bool"
+                      name="Activo" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimProducto\Cargar en DimProducto.Inputs[ADO NET Destination Input].ExternalColumns[FechaInicio]"
+                      dataType="dbTimeStamp"
+                      name="FechaInicio" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimProducto\Cargar en DimProducto.Inputs[ADO NET Destination Input].ExternalColumns[FechaFin]"
+                      dataType="dbTimeStamp"
+                      name="FechaFin" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -721,7 +733,7 @@ on pm.ProductModelID=p.ProductModelID</property>
     design-time-name="Package\Llenar DimProducto">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="194,42"
           Id="Package\Llenar DimProducto\Cargar en DimProducto"
@@ -761,9 +773,7 @@ on pm.ProductModelID=p.ProductModelID</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

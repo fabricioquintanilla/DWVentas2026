@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="6"
-  DTS:VersionGUID="{B159D916-6C7F-47B9-B7E7-3F682D2D2CF6}">
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{ABAE546E-9D83-45D4-845D-76406900B374}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbrvD2BnwfkeYek7PA3KxwQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABRY0ZyU1AYycZbdSxaRoUhHSDCzNLQ2lAT9OS7yxqR2wAAAAAOgAAAAAIAACAAAADiHHgYgi2TCbA02j0juBLehyrRlpv+jyHsGF7nvuxA6CAAAAAxdBplKLDRlhz9cUgMP9WPViiOoIbT7kuGCSWHhNLWW0AAAACdeJXNNJtZXE5VH+wo84aMwV26gIFb3/TsjX6vF11qSPR7/zscsIDlTyc2uXSLOCy9PaZ8jDIjCJvJWlQaxb+r</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACEOqnl+EiGDRDVnzqDYBplfoN4ygsv+D+7eoGfYs6lFwAAAAAOgAAAAAIAACAAAAAV72Awo7zOM2Dx8tC26jJlrZQ1UZRpnqVnA0OPevw+FCAAAABVzimplSFahEZ+qeZXDSl/Utb/Ov/ENtkfH8ukPNM6jUAAAACuNVjkJZBB5kIt8UB9fir6s/+O7pwEQo60skOjYtLN6TU7e6vsL2OaJk9TqLu1UBdub5sFTbnZxmZb9t763j0Y</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbrvD2BnwfkeYek7PA3KxwQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAW3RH1/gD6Q6OosZuM2ZiY9I8O8MV1HR7bVMkoAlTo0QAAAAAOgAAAAAIAACAAAAC4xGQ/WOPkvMID8gBsy/WW9Tf/+6YBYiNSAT4Lh5kLPSAAAAAyG9TPvEMXv3U0pcM/gN1K0yOCzN2augyxV1kFlqgp7EAAAABs5A7/rh7cu0ytkq6SDpOFrXCWSz8/YFe/S1wXwaftNcnq0emihQJ4rqtlRfAJP9TsbJwnoXw+vM9AvGRtirBM</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACOYv4bQIofIbyX+Q5VHTIuD2M93jWvapQQKlMdSl49+wAAAAAOgAAAAAIAACAAAAC2dfj3r2xYky06xCT5pQVpplympcO4I5uC3gw0T+lUeSAAAAB8eyXej/gnP7YylqnW0BHPL6/jec75wPmU68Azsr9is0AAAADxMmWcOF16As6WqbSN9tyZW2VQGKnaw6ujDztS6Y2U+agQ1YVsYOgClktN1wnXz+tzQ340vI3IRQ7AyYY3DkkS</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -170,6 +170,18 @@
                       dataType="wstr"
                       length="50"
                       name="Grupo" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimTerritorioVentas\DimTerritorioVentas.Inputs[ADO NET Destination Input].ExternalColumns[Activo]"
+                      dataType="bool"
+                      name="Activo" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimTerritorioVentas\DimTerritorioVentas.Inputs[ADO NET Destination Input].ExternalColumns[FechaInicio]"
+                      dataType="dbTimeStamp"
+                      name="FechaInicio" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimTerritorioVentas\DimTerritorioVentas.Inputs[ADO NET Destination Input].ExternalColumns[FechaFin]"
+                      dataType="dbTimeStamp"
+                      name="FechaFin" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -466,7 +478,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Llenar DimTerritorioVentas\Leer TerritorioVentas">
+    design-time-name="Package\Llenar DimTerritorioVentas\DimTerritorioVentas">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -474,7 +486,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Llenar DimTerritorioVentas\DimTerritorioVentas">
+    design-time-name="Package\Llenar DimTerritorioVentas\Leer TerritorioVentas">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

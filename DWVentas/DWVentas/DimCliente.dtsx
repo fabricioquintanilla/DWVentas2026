@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="DimCliente"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{3226893B-2A30-4261-AFD5-03D7883EDB1E}">
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{7BA7DBC2-173F-46C1-BB3A-831B47EF2DB6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbrvD2BnwfkeYek7PA3KxwQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB/lSQsvyezB0AkaYdPyy+JjAtBq3n+yQN6Eii+fIk6rQAAAAAOgAAAAAIAACAAAAAs/3Ays6MR1Lf9dhkuz2ZqxFjlw4nF/FbUVKbSaaqqrCAAAACFXEXXxCGN7+HPpLFYwYtO+4fbLnZhg/L6z9slIPXtEEAAAAAc2jv4rCu30V5Ju+OUP5qfv3yu6QbP8ns6JRrT1E0AM9A1cd2xAb+ey6K9GcbhjPeZHXPkyQFZwM/JqkS2DeL4</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADLWZEskG9AZ2Temvrf8BbHrkZHiqwqR/05eMiXLNdeXQAAAAAOgAAAAAIAACAAAABd9H4Po44hmIhLlB72/QKYUCdAgEMT5mlYJdAoNvlPXyAAAAAIAEKdrwWcsXfG0iX2ZaxRrSoEuGK/ZuO+biisgH2xoEAAAADAhwx0+0y+QOz/T0Ycv4yq75nVIMVIKk+9eUhawThnQVFxmU97AFKhmq+lj1HuU8Bv14ySBbnbH/glJhj4KdeZ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbrvD2BnwfkeYek7PA3KxwQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACbKUrfx0c/IZ34cVCZqYf4mEqE9g3eeRP7rpAvv1MIywAAAAAOgAAAAAIAACAAAAAW8ofb3tSVVoH2VIN1GCXi+pxJ8thsts2j2sKrCnyAjSAAAAD6YKlV/2IqjTyZYTfJKD+lGulolUEUT+FUkZlM9H/v4UAAAAA5EhQUApg1EyHg3djxTfogiKULISXcWvovA4MD2u3iXbqXJ17qJpAmyzhQYnPWcZvPfjEZFF/gnWha7xz9IrfY</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAPMBJKNaG2y2pq6yJiX5l4H49U8JTyXXYBUZ8/4ixq3QAAAAAOgAAAAAIAACAAAACIBAZdBlaMPhz59MhfUGlcaGDG7SNyUMTw5fz1Ky4qESAAAABaAePjNcL8Gz4NBGBkXKDx1BAQFT8hDidbSWEJapJaw0AAAAAHloZF5M8j77M7bD2m59DNs4v5GLBi6Q/0l4xZy/Vi60MLeBuTQPLy+VAscUePdnlA9tIYkuso//Im4uAVSoB0</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -194,6 +194,18 @@
                       dataType="wstr"
                       length="50"
                       name="TipoPersona" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimCliente\DimCliente.Inputs[ADO NET Destination Input].ExternalColumns[Activo]"
+                      dataType="bool"
+                      name="Activo" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimCliente\DimCliente.Inputs[ADO NET Destination Input].ExternalColumns[FechaInicio]"
+                      dataType="dbTimeStamp"
+                      name="FechaInicio" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimCliente\DimCliente.Inputs[ADO NET Destination Input].ExternalColumns[FechaFin]"
+                      dataType="dbTimeStamp"
+                      name="FechaFin" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -499,7 +511,7 @@ on c.PersonID=p.BusinessEntityID</property>
     design-time-name="Package\Llenar DimCliente">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="144,42"
           Id="Package\Llenar DimCliente\Leer Clientes"
@@ -539,9 +551,7 @@ on c.PersonID=p.BusinessEntityID</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

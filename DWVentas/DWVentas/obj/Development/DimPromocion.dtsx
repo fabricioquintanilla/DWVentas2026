@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="DimPromocion"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{73C4F03C-3D2F-46BD-BF6B-8F71F5481D66}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{062D2B41-8CEA-4A9D-A170-77754E8F52BD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbrvD2BnwfkeYek7PA3KxwQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC8Vm35Ym2pA8VX66fWTyscOUrIa81e2skJM0VmZoitHwAAAAAOgAAAAAIAACAAAABWUqEutjsubGSQ+yOcWq5oMSzIv0GS95H4pejmSpgvsCAAAABACjCdX+5g1aXnlqn4r4O8BodhTxMYzUQgFbqRIRDQDUAAAAB/1HZ1vN8bo+NeVgSz1SgLUGT8WOj6albre3fCi2Erzd8jHm+Hy6VV4gNm1ZAMHkjXfnIoKJIAuTNxqyKvxg01</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABQoCW0V6VygUJe3dMdmnutR5QsfnWWMnoU+hyJXS3e7wAAAAAOgAAAAAIAACAAAADncahHE4fgWZDbefmVYsHU5WEBEK+A+2ATcrkaVS0/jCAAAAC732XJhfnI4Wz8GpGCJdcJN5jm4D0sbCc5QFXz3YtyL0AAAAA09pCm1O7jCFiTYndLF8v5FoANy87JN6JJZGFBGbeDqoh3tt1xH2vVOHTMT9rslwhW2SNBfbDx4S3SMdkcFHAb</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbrvD2BnwfkeYek7PA3KxwQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAOeIZE2tubdfqyiNcX4gYk4eOAQUxW+muiKWLqUt8COQAAAAAOgAAAAAIAACAAAAC97q3Iam3JVmdLZ2MAsIeotGGDQhWzbQ1TrqUCXWuFGiAAAADSPbcTPkJLygYifEKJGgi4qctAHcY1SzktIx7rbLpAlUAAAABJbOwWLbuTuuNaqOT1Uf91A1eGlkmkXCOw3kMMYFJcNNhHSArPHc6aZAV0EtoEwO4cPVbW4poavPrRWIUv9xsF</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACIgfGPGCSv8P7Fz6FfXLzFHvBEkEZh5mlH5/UQ/xiREAAAAAAOgAAAAAIAACAAAAAjuR+78fP+ksEexQagW7+KuUyAIW6e2F3fCy8ANv9/XCAAAACcixl9x8S5XIOLp+GSjU/Rl9VDIJsLEawz4YxMD8qU4kAAAAD9EB0+tleaoI7iH4R3ZyNzif9sUd6dw+XlY3QW6XOs/OPDhSehuBvnJFTkKomT5qZIuDrhe4cfrwcwWKqWCWJz</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -194,6 +194,18 @@
                       dataType="wstr"
                       length="50"
                       name="Categoria" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimPromocion\DimPromocion.Inputs[ADO NET Destination Input].ExternalColumns[Activo]"
+                      dataType="bool"
+                      name="Activo" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimPromocion\DimPromocion.Inputs[ADO NET Destination Input].ExternalColumns[FechaInicio]"
+                      dataType="dbTimeStamp"
+                      name="FechaInicio" />
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimPromocion\DimPromocion.Inputs[ADO NET Destination Input].ExternalColumns[FechaFin]"
+                      dataType="dbTimeStamp"
+                      name="FechaFin" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -441,13 +453,13 @@ from sales.SpecialOffer</property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="185,42"
-          Id="Package\Llenar DimPromocion"
-          TopLeft="383,224" />
-        <NodeLayout
           Size="190,42"
           Id="Package\Limpiar DimPromocion"
           TopLeft="280,98" />
+        <NodeLayout
+          Size="185,42"
+          Id="Package\Llenar DimPromocion"
+          TopLeft="383,224" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="375,140">
@@ -536,7 +548,7 @@ from sales.SpecialOffer</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Llenar DimPromocion\Leer SpecialOffer">
+    design-time-name="Package\Llenar DimPromocion\DimPromocion">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -544,7 +556,7 @@ from sales.SpecialOffer</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Llenar DimPromocion\DimPromocion">
+    design-time-name="Package\Llenar DimPromocion\Leer SpecialOffer">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
