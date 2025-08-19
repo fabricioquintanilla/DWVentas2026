@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="FactVentas"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{902E6B7D-2986-415D-A10A-6E62EF3DE842}">
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{83002C56-B941-4211-9A96-0550968DA441}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABv58J8ZOTK0a6lO52v5Fk18kJwQXWmSPXT9fYuWiZzWAAAAAAOgAAAAAIAACAAAAAQDSHFsbiw92HsMQLjxzvBXR0ENN+I5r5kh2uTL+ER8CAAAADlu3M9lH3AhypZzK3MOUlPUCM42vMAYH0ydqizt1FjBEAAAAACfddGj38FlE/UZ2yvJHAy5bd2+uxW3JlhiPFZ9BCDGeeV2EgUE0MwmnspIE2Yo7D4Zz86I6tOorHnURDWUK3A</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABez3hLATDAc4fpV5425j61VfjdVGI9AkfPvd1yTZXVwAAAAAAOgAAAAAIAACAAAACrhv/DTUtmCmxCb7Xs8ZPhXWsxnD8+sGNKsfavzOHWNSAAAABh0EbKngN+M2qacD1xzbCGgEvjVJyBAl3HsKLZyx/89kAAAACrKfRiA0FAu49uPNnDr7LW6+VuuM1AaaanMvF0Xdc3oAYNGjGWCJb9Vz6uyIJuCHS4hRmTOglWeHYl1+zh/iAi</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAALa5RuDZ3sA0Afxpp4gIZxfGY3raPU9lKdqCxEroAqDQAAAAAOgAAAAAIAACAAAADy+6B4NPE1neWVGtabgrsE8lex8S4fosf87xty7Ui/OiAAAACzq2bA3jPfyvAc9w/qM5XFcMVnAjX4LVuoEkCqt4ywcEAAAAAOOSWwjj+HwO58UvXL65oA5UoNmISW7SuvGoYa963+yt/K9fI+xclY4kyXgXLpqTpBhiJqpXtIgv0iXezcIgRH</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADUm4P0mrNF5dZAZ9k8/eCgpvsdWx7FFOH5WTsZ+/kKugAAAAAOgAAAAAIAACAAAADjjoocTZzSVFdMClp0LuPdHYwto7M2OSKEXfd5leYIEyAAAAD+AyBM8pE7dh1lpGNxlCk3hqdxFq73I3tJKjZziebfJUAAAAB+awIl33dsdsgeDXJYwdB6XCngteE85P7OQfYXw4cPsVqXwCUD1emMrwHgKkD2LeXiOhYsE/2kgVdBF8vUxISO</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -59,7 +59,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACMqnluhjDV/bvt0HJPWL+8tMF+jCPhdNK2fRkbM81FrgAAAAAOgAAAAAIAACAAAAAeFi+CMxX8WuDedZWGcFRaWzZbgvtsDpvpKJ4S1MRMxiAAAAC0uJbQ/oI+WL+HanOItJ7gyMNGZYpjpk+w824zFFLr2kAAAADXoLc5/9z0Hcn88DNo31c2aeTA4XreAaBNI6ZUp37NaVYWdvEK8RxxfZRS0TxpkYjCjFAnTbfQq+SG7w+z6+wD</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACXefYY+Gjevvx/eAgfw7mLAh+CwVxkZN+ModPQJFxdsQAAAAAOgAAAAAIAACAAAABR7CwvX+d1j0X6AYpaVUrUHgBx00Ho+//uMOM4ipte9yAAAADEx4SwR29rgx1PrrHq+4htGpHrzhv+AmFm/cuwcGJwU0AAAAB/pwcDM6gU+HHGu5AQDlLFHUD+WeD4e4P0ypUMCz9TfewD0d/tC6Ci/41FJRPoAbqtQClOY1DByoxC1LijVdPf</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -642,7 +642,7 @@ on soh.SalesOrderID=sod.SalesOrderID</property>
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimCliente]) [refTable]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimCliente] where Activo=1) [refTable]
 where [refTable].[ClienteID] = ?</property>
                 <property
                   dataType="System.Int32"
@@ -653,7 +653,7 @@ where [refTable].[ClienteID] = ?</property>
                   dataType="System.Int32"
                   description="Specifies the cache type of the lookup table."
                   name="CacheType"
-                  typeConverter="CacheType">0</property>
+                  typeConverter="CacheType">1</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
@@ -679,7 +679,7 @@ where [refTable].[ClienteID] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Cargar Fact Ventas\299:invalid};</property>
+                  name="ParameterMap">#{Package\Cargar Fact Ventas\Leer Ventas.Outputs[ADO NET Source Output].Columns[CustomerID]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1274,7 +1274,7 @@ where [refTable].[Fecha] = ?</property>
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimProducto]) [refTable]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimProducto] where Activo=1) [refTable]
 where [refTable].[ProductID] = ?</property>
                 <property
                   dataType="System.Int32"
@@ -1285,7 +1285,7 @@ where [refTable].[ProductID] = ?</property>
                   dataType="System.Int32"
                   description="Specifies the cache type of the lookup table."
                   name="CacheType"
-                  typeConverter="CacheType">0</property>
+                  typeConverter="CacheType">1</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
@@ -1311,7 +1311,7 @@ where [refTable].[ProductID] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Cargar Fact Ventas\303:invalid};</property>
+                  name="ParameterMap">#{Package\Cargar Fact Ventas\Leer Ventas.Outputs[ADO NET Source Output].Columns[ProductID]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1432,7 +1432,7 @@ where [refTable].[ProductID] = ?</property>
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimPromocion]) [refTable]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimPromocion] where Activo=1) [refTable]
 where [refTable].[PromocionID] = ?</property>
                 <property
                   dataType="System.Int32"
@@ -1443,7 +1443,7 @@ where [refTable].[PromocionID] = ?</property>
                   dataType="System.Int32"
                   description="Specifies the cache type of the lookup table."
                   name="CacheType"
-                  typeConverter="CacheType">0</property>
+                  typeConverter="CacheType">1</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
@@ -1469,7 +1469,7 @@ where [refTable].[PromocionID] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Cargar Fact Ventas\304:invalid};</property>
+                  name="ParameterMap">#{Package\Cargar Fact Ventas\Leer Ventas.Outputs[ADO NET Source Output].Columns[SpecialOfferID]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1590,7 +1590,7 @@ where [refTable].[PromocionID] = ?</property>
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimTerritorioVenta]) [refTable]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimTerritorioVenta] where Activo=1) [refTable]
 where [refTable].[TerritorioID] = ?</property>
                 <property
                   dataType="System.Int32"
@@ -1601,7 +1601,7 @@ where [refTable].[TerritorioID] = ?</property>
                   dataType="System.Int32"
                   description="Specifies the cache type of the lookup table."
                   name="CacheType"
-                  typeConverter="CacheType">0</property>
+                  typeConverter="CacheType">1</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
@@ -1627,7 +1627,7 @@ where [refTable].[TerritorioID] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Cargar Fact Ventas\305:invalid};</property>
+                  name="ParameterMap">#{Package\Cargar Fact Ventas\Leer Ventas.Outputs[ADO NET Source Output].Columns[TerritoryID]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1748,7 +1748,7 @@ where [refTable].[TerritorioID] = ?</property>
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimVendedor]) [refTable]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimVendedor] where Activo=1) [refTable]
 where [refTable].[VendedorID] = ?</property>
                 <property
                   dataType="System.Int32"
@@ -1759,7 +1759,7 @@ where [refTable].[VendedorID] = ?</property>
                   dataType="System.Int32"
                   description="Specifies the cache type of the lookup table."
                   name="CacheType"
-                  typeConverter="CacheType">0</property>
+                  typeConverter="CacheType">1</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
@@ -1785,7 +1785,7 @@ where [refTable].[VendedorID] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Cargar Fact Ventas\306:invalid};</property>
+                  name="ParameterMap">#{Package\Cargar Fact Ventas\Leer Ventas.Outputs[ADO NET Source Output].Columns[SalesPersonID]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1985,33 +1985,33 @@ where [refTable].[VendedorID] = ?</property>
         <NodeLayout
           Size="172,42"
           Id="Package\Vaciar Fact Ventas"
-          TopLeft="97,87" />
+          TopLeft="97,85" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="183,129">
+          TopLeft="183,127">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="218,116"
+              EndConnector="218,118"
               Start="0,0"
-              End="218,108.5">
+              End="218,110.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,54" />
+                    End="0,55" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,54"
-                    Point2="0,58"
-                    Point3="4,58" />
+                    Point1="0,55"
+                    Point2="0,59"
+                    Point3="4,59" />
                   <mssgle:LineSegment
-                    End="214,58" />
+                    End="214,59" />
                   <mssgle:CubicBezierSegment
-                    Point1="214,58"
-                    Point2="218,58"
-                    Point3="218,62" />
+                    Point1="214,59"
+                    Point2="218,59"
+                    Point3="218,63" />
                   <mssgle:LineSegment
-                    End="218,108.5" />
+                    End="218,110.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2421,7 +2421,7 @@ where [refTable].[VendedorID] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">true</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -2444,7 +2444,7 @@ where [refTable].[VendedorID] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:string">true</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -2467,7 +2467,7 @@ where [refTable].[VendedorID] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">true</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -2490,7 +2490,7 @@ where [refTable].[VendedorID] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:string">true</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -2544,7 +2544,7 @@ where [refTable].[VendedorID] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">true</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>

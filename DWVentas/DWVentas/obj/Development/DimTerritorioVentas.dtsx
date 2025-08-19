@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{ABAE546E-9D83-45D4-845D-76406900B374}">
+  DTS:VersionBuild="13"
+  DTS:VersionGUID="{059EAFAB-AEE4-47E8-B9EB-4C9926788319}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACEOqnl+EiGDRDVnzqDYBplfoN4ygsv+D+7eoGfYs6lFwAAAAAOgAAAAAIAACAAAAAV72Awo7zOM2Dx8tC26jJlrZQ1UZRpnqVnA0OPevw+FCAAAABVzimplSFahEZ+qeZXDSl/Utb/Ov/ENtkfH8ukPNM6jUAAAACuNVjkJZBB5kIt8UB9fir6s/+O7pwEQo60skOjYtLN6TU7e6vsL2OaJk9TqLu1UBdub5sFTbnZxmZb9t763j0Y</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACvAVFFxabwgBX6zdAL+urs1ErQAo05WUCZZTPiNn1WhAAAAAAOgAAAAAIAACAAAAAtqkqKxNXxpVYQaUcf62a16jf55DwjF3ysdFVZk/FRuyAAAAAxw82MH8TFjf/smLAWzSzuRyiQ0n3+2ebiM+Dv1906G0AAAACv6AX7+uuPWOP5FYW+NAxAs4qzx4qDPFqe3p79jA6aKD0PcQhLO7bUYPrSL1eWXbwcmR0Yd9Fn6O3pBRmAn7jo</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,24 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACOYv4bQIofIbyX+Q5VHTIuD2M93jWvapQQKlMdSl49+wAAAAAOgAAAAAIAACAAAAC2dfj3r2xYky06xCT5pQVpplympcO4I5uC3gw0T+lUeSAAAAB8eyXej/gnP7YylqnW0BHPL6/jec75wPmU68Azsr9is0AAAADxMmWcOF16As6WqbSN9tyZW2VQGKnaw6ujDztS6Y2U+agQ1YVsYOgClktN1wnXz+tzQ340vI3IRQ7AyYY3DkkS</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAC4wAUWOY76leRjlW/H1rn5xUBAtytVs4Dl30/cWb5igAAAAAOgAAAAAIAACAAAAAZkxjVeTLymDwWGNoOE7u88EDZ4UL3mmDRIW4yjUGzUiAAAADUtkV4x3UhInUSBYTiO+aIz5zHpD/sVSItPQlJMTUUTkAAAADiJc8utKTrHivRuS2UjUwutjHb6zTQEhoz9ZkWSju8afviOmKWVSdLb89Gkah9Ny51K2c3pCkIGilLS9jIu01H</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.DWVentas20250407.sa1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{D900F8E6-F4D6-429E-B1D2-17C01112609C}"
+      DTS:ObjectName="localhost.DWVentas20250407.sa1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=DWVentas20250407;Provider=SQLNCLI11.1;Persist Security Info=True;Application Name=SSIS-Package1-{D900F8E6-F4D6-429E-B1D2-17C01112609C}localhost.DWVentas20250407.sa1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABm9uOmTMsdH5oynCHPBXmmNk35oJhE1l+eXbxEswUuxgAAAAAOgAAAAAIAACAAAADGhOyFnP3Wmjjo5L75ZDOSnTJQRJCo8XgLm9vRa9bCQSAAAACfFcwMvx9ZUXMl6vsAIP3kwWfZs7coLA8Ib2KWP+/c4EAAAAACvxt+JwjsXSddR9JHe6PBg04unqtWnkScTfuBZqkI4qq+uj/81p9Y+KmE3XY/77q4Vmt6v+kqwsT+lALtYLQt</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -53,6 +70,7 @@
       DTS:refId="Package\Limpiar DimTerritorioVentas"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{F43887D9-74A3-48D4-92DE-DA6F8DA94C74}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -80,6 +98,407 @@
         <pipeline
           version="1">
           <components>
+            <component
+              refId="Package\Llenar DimTerritorioVentas\Actualizar TerritorioVentas"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
+              name="Actualizar TerritorioVentas"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">exec ActualizarTerritorioVentas ?,?,?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Llenar DimTerritorioVentas\Actualizar TerritorioVentas.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.DWVentas20250407.sa1]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.DWVentas20250407.sa1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Llenar DimTerritorioVentas\Actualizar TerritorioVentas.Inputs[OLE DB Command Input]"
+                  errorOrTruncationOperation="Command Execution"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Command Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Llenar DimTerritorioVentas\Actualizar TerritorioVentas.Inputs[OLE DB Command Input].Columns[TerritorioVentaKey]"
+                      cachedDataType="i4"
+                      cachedName="TerritorioVentaKey"
+                      externalMetadataColumnId="Package\Llenar DimTerritorioVentas\Actualizar TerritorioVentas.Inputs[OLE DB Command Input].ExternalColumns[@TerritorioVentaKey]"
+                      lineageId="Package\Llenar DimTerritorioVentas\Buscar Vendedor.Outputs[Lookup Match Output].Columns[TerritorioVentaKey]" />
+                    <inputColumn
+                      refId="Package\Llenar DimTerritorioVentas\Actualizar TerritorioVentas.Inputs[OLE DB Command Input].Columns[NuevoNombre]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="NuevoNombre"
+                      externalMetadataColumnId="Package\Llenar DimTerritorioVentas\Actualizar TerritorioVentas.Inputs[OLE DB Command Input].ExternalColumns[@Nombre]"
+                      lineageId="Package\Llenar DimTerritorioVentas\Data Conversion.Outputs[Data Conversion Output].Columns[NuevoNombre]" />
+                    <inputColumn
+                      refId="Package\Llenar DimTerritorioVentas\Actualizar TerritorioVentas.Inputs[OLE DB Command Input].Columns[NuevoGrupo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="NuevoGrupo"
+                      externalMetadataColumnId="Package\Llenar DimTerritorioVentas\Actualizar TerritorioVentas.Inputs[OLE DB Command Input].ExternalColumns[@Grupo]"
+                      lineageId="Package\Llenar DimTerritorioVentas\Data Conversion.Outputs[Data Conversion Output].Columns[NuevoGrupo]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimTerritorioVentas\Actualizar TerritorioVentas.Inputs[OLE DB Command Input].ExternalColumns[@TerritorioVentaKey]"
+                      dataType="i4"
+                      name="@TerritorioVentaKey">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimTerritorioVentas\Actualizar TerritorioVentas.Inputs[OLE DB Command Input].ExternalColumns[@Nombre]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="@Nombre">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimTerritorioVentas\Actualizar TerritorioVentas.Inputs[OLE DB Command Input].ExternalColumns[@Grupo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="@Grupo">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Llenar DimTerritorioVentas\Actualizar TerritorioVentas.Outputs[OLE DB Command Output]"
+                  exclusionGroup="1"
+                  name="OLE DB Command Output"
+                  synchronousInputId="Package\Llenar DimTerritorioVentas\Actualizar TerritorioVentas.Inputs[OLE DB Command Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Llenar DimTerritorioVentas\Actualizar TerritorioVentas.Outputs[OLE DB Command Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Command Error Output"
+                  synchronousInputId="Package\Llenar DimTerritorioVentas\Actualizar TerritorioVentas.Inputs[OLE DB Command Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Llenar DimTerritorioVentas\Actualizar TerritorioVentas.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Llenar DimTerritorioVentas\Actualizar TerritorioVentas.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Llenar DimTerritorioVentas\Actualizar TerritorioVentas.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Llenar DimTerritorioVentas\Actualizar TerritorioVentas.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Llenar DimTerritorioVentas\Buscar Vendedor"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Buscar Vendedor"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DimTerritorioVenta]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimTerritorioVenta] where Activo=1) [refTable]
+where [refTable].[TerritorioID] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="TerritorioVentaKey" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TerritorioID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Nombre" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Grupo" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Activo" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FechaInicio" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FechaFin" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Llenar DimTerritorioVentas\Leer TerritorioVentas.Outputs[ADO NET Source Output].Columns[TerritoryID]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Llenar DimTerritorioVentas\Buscar Vendedor.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.DWVentas20250407.sa1]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.DWVentas20250407.sa1]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Llenar DimTerritorioVentas\Buscar Vendedor.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Llenar DimTerritorioVentas\Buscar Vendedor.Inputs[Lookup Input].Columns[TerritoryID]"
+                      cachedDataType="i4"
+                      cachedName="TerritoryID"
+                      lineageId="Package\Llenar DimTerritorioVentas\Leer TerritorioVentas.Outputs[ADO NET Source Output].Columns[TerritoryID]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">TerritorioID</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Llenar DimTerritorioVentas\Buscar Vendedor.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Llenar DimTerritorioVentas\Buscar Vendedor.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Llenar DimTerritorioVentas\Buscar Vendedor.Outputs[Lookup Match Output].Columns[TerritorioVentaKey]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\Llenar DimTerritorioVentas\Buscar Vendedor.Outputs[Lookup Match Output].Columns[TerritorioVentaKey]"
+                      name="TerritorioVentaKey"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">TerritorioVentaKey</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Llenar DimTerritorioVentas\Buscar Vendedor.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Llenar DimTerritorioVentas\Buscar Vendedor.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Llenar DimTerritorioVentas\Buscar Vendedor.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Llenar DimTerritorioVentas\Buscar Vendedor.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Llenar DimTerritorioVentas\Buscar Vendedor.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Llenar DimTerritorioVentas\Buscar Vendedor.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Llenar DimTerritorioVentas\Buscar Vendedor.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Llenar DimTerritorioVentas\Buscar Vendedor.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Llenar DimTerritorioVentas\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Llenar DimTerritorioVentas\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Llenar DimTerritorioVentas\Data Conversion.Inputs[Data Conversion Input].Columns[name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="name"
+                      lineageId="Package\Llenar DimTerritorioVentas\Leer TerritorioVentas.Outputs[ADO NET Source Output].Columns[name]" />
+                    <inputColumn
+                      refId="Package\Llenar DimTerritorioVentas\Data Conversion.Inputs[Data Conversion Input].Columns[Group]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Group"
+                      lineageId="Package\Llenar DimTerritorioVentas\Leer TerritorioVentas.Outputs[ADO NET Source Output].Columns[Group]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Llenar DimTerritorioVentas\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Llenar DimTerritorioVentas\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Llenar DimTerritorioVentas\Data Conversion.Outputs[Data Conversion Output].Columns[NuevoNombre]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Llenar DimTerritorioVentas\Data Conversion.Outputs[Data Conversion Output].Columns[NuevoNombre]"
+                      name="NuevoNombre"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Llenar DimTerritorioVentas\Leer TerritorioVentas.Outputs[ADO NET Source Output].Columns[name]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Llenar DimTerritorioVentas\Data Conversion.Outputs[Data Conversion Output].Columns[NuevoGrupo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Llenar DimTerritorioVentas\Data Conversion.Outputs[Data Conversion Output].Columns[NuevoGrupo]"
+                      name="NuevoGrupo"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Llenar DimTerritorioVentas\Leer TerritorioVentas.Outputs[ADO NET Source Output].Columns[Group]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Llenar DimTerritorioVentas\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Llenar DimTerritorioVentas\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Llenar DimTerritorioVentas\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Llenar DimTerritorioVentas\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Llenar DimTerritorioVentas\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Llenar DimTerritorioVentas\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
             <component
               refId="Package\Llenar DimTerritorioVentas\DimTerritorioVentas"
               componentClassID="Microsoft.ManagedComponentHost"
@@ -352,9 +771,24 @@
           <paths>
             <path
               refId="Package\Llenar DimTerritorioVentas.Paths[ADO NET Source Output]"
-              endId="Package\Llenar DimTerritorioVentas\DimTerritorioVentas.Inputs[ADO NET Destination Input]"
+              endId="Package\Llenar DimTerritorioVentas\Buscar Vendedor.Inputs[Lookup Input]"
               name="ADO NET Source Output"
               startId="Package\Llenar DimTerritorioVentas\Leer TerritorioVentas.Outputs[ADO NET Source Output]" />
+            <path
+              refId="Package\Llenar DimTerritorioVentas.Paths[Data Conversion Output]"
+              endId="Package\Llenar DimTerritorioVentas\Actualizar TerritorioVentas.Inputs[OLE DB Command Input]"
+              name="Data Conversion Output"
+              startId="Package\Llenar DimTerritorioVentas\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Llenar DimTerritorioVentas.Paths[Lookup Match Output]"
+              endId="Package\Llenar DimTerritorioVentas\Data Conversion.Inputs[Data Conversion Input]"
+              name="Lookup Match Output"
+              startId="Package\Llenar DimTerritorioVentas\Buscar Vendedor.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Llenar DimTerritorioVentas.Paths[Lookup No Match Output]"
+              endId="Package\Llenar DimTerritorioVentas\DimTerritorioVentas.Inputs[ADO NET Destination Input]"
+              name="Lookup No Match Output"
+              startId="Package\Llenar DimTerritorioVentas\Buscar Vendedor.Outputs[Lookup No Match Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -431,7 +865,7 @@
     design-time-name="Package\Llenar DimTerritorioVentas">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="182,42"
           Id="Package\Llenar DimTerritorioVentas\Leer TerritorioVentas"
@@ -439,33 +873,151 @@
         <NodeLayout
           Size="177,42"
           Id="Package\Llenar DimTerritorioVentas\DimTerritorioVentas"
-          TopLeft="376,272" />
+          TopLeft="422,331" />
+        <NodeLayout
+          Size="164,42"
+          Id="Package\Llenar DimTerritorioVentas\Buscar Vendedor"
+          TopLeft="265,212" />
         <EdgeLayout
           Id="Package\Llenar DimTerritorioVentas.Paths[ADO NET Source Output]"
           TopLeft="245,158">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="219.5,114"
+              EndConnector="102,54"
               Start="0,0"
-              End="219.5,106.5">
+              End="102,46.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,53" />
+                    End="0,23" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,53"
-                    Point2="0,57"
-                    Point3="4,57" />
+                    Point1="0,23"
+                    Point2="0,27"
+                    Point3="4,27" />
                   <mssgle:LineSegment
-                    End="215.5,57" />
+                    End="98,27" />
                   <mssgle:CubicBezierSegment
-                    Point1="215.5,57"
-                    Point2="219.5,57"
-                    Point3="219.5,61" />
+                    Point1="98,27"
+                    Point2="102,27"
+                    Point3="102,31" />
                   <mssgle:LineSegment
-                    End="219.5,106.5" />
+                    End="102,46.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Llenar DimTerritorioVentas.Paths[Lookup No Match Output]"
+          TopLeft="347,254">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="163.5,77"
+              Start="0,0"
+              End="163.5,69.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.5"
+                    Point2="0,38.5"
+                    Point3="4,38.5" />
+                  <mssgle:LineSegment
+                    End="159.5,38.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="159.5,38.5"
+                    Point2="163.5,38.5"
+                    Point3="163.5,42.5" />
+                  <mssgle:LineSegment
+                    End="163.5,69.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="25.94361328125,43.5,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="209,42"
+          Id="Package\Llenar DimTerritorioVentas\Actualizar TerritorioVentas"
+          TopLeft="88,407" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Llenar DimTerritorioVentas\Data Conversion"
+          TopLeft="104,301" />
+        <EdgeLayout
+          Id="Package\Llenar DimTerritorioVentas.Paths[Lookup Match Output]"
+          TopLeft="321,254">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-136.5,47"
+              Start="0,0"
+              End="-136.5,39.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.0724637681159" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.0724637681159"
+                    Point2="0,19.0724637681159"
+                    Point3="-4,19.0724637681159" />
+                  <mssgle:LineSegment
+                    End="-132.5,19.0724637681159" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-132.5,19.0724637681159"
+                    Point2="-136.5,19.0724637681159"
+                    Point3="-136.5,23.0724637681159" />
+                  <mssgle:LineSegment
+                    End="-136.5,39.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-116.44138671875,24.0724637681159,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Llenar DimTerritorioVentas.Paths[Data Conversion Output]"
+          TopLeft="184.5,343">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="8,64"
+              Start="0,0"
+              End="8,56.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28"
+                    Point2="0,32"
+                    Point3="4,32" />
+                  <mssgle:LineSegment
+                    End="4,32" />
+                  <mssgle:CubicBezierSegment
+                    Point1="4,32"
+                    Point2="8,32"
+                    Point3="8,36" />
+                  <mssgle:LineSegment
+                    End="8,56.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -488,6 +1040,29 @@
   <PipelineComponentMetadata
     design-time-name="Package\Llenar DimTerritorioVentas\Leer TerritorioVentas">
     <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Llenar DimTerritorioVentas\Buscar Vendedor">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">true</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimTerritorioVenta]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
       <Property>
         <Name>DataSourceViewID</Name>
       </Property>

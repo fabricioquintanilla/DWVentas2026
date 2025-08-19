@@ -142,3 +142,157 @@ begin
 	values(@IDVendedor, @PrimerNombre, @SegundoNombre, @Apellido, @TipoPersona)
 end
 end
+go
+--Actualizar Territorio de Ventas
+CREATE OR ALTER   procedure [dbo].[ActualizarTerritorioVentas](@TerritorioVentaKey int, 
+@Nombre varchar(50), @Grupo varchar(50))
+AS
+begin
+
+declare @NombreActual varchar(50),
+		@GrupoActual varchar(50),
+		@TerritorioID int
+
+select @NombreActual=Nombre, @GrupoActual=Grupo, @TerritorioID=TerritorioID
+from DimTerritorioVenta where TerritorioVentaKey=@TerritorioVentaKey
+
+/*
+Nombre SCD2
+*/
+
+--SCD1
+if (@GrupoActual<>@Grupo) 
+	UPDATE DimTerritorioVenta set Grupo=@Grupo
+	where TerritorioVentaKey=@TerritorioVentaKey
+
+--SCD2
+if (@NombreActual<>@Nombre)
+begin
+	update DimTerritorioVenta set Activo=0, fechafin=getdate() 
+	where TerritorioVentaKey=@TerritorioVentaKey
+
+	insert into DimTerritorioVenta(TerritorioID, Nombre, Grupo)
+	values(@TerritorioID, @Nombre, @Grupo)
+end
+end
+
+go
+
+--Actualizar Promociones
+CREATE OR ALTER   procedure [dbo].[ActualizarPromociones](@PromocionKey int, 
+@Descripcion varchar(255), @Porcentaje float, @Tipo varchar(50), @Categoria varchar(50))
+AS
+begin
+
+declare @DescripcionActual varchar(255),
+		@PorcentajeActual float,
+		@PromocionID int,
+		@TipoActual varchar(50), 
+		@CategoriaActual varchar(50)
+
+select @DescripcionActual=Descripcion, @PorcentajeActual=Porcentaje, @PromocionID=PromocionID,
+@TipoActual=Tipo, @CategoriaActual=Categoria
+from DimPromocion where PromocionKey=@PromocionKey
+
+/*
+Todos los campos son considerados SCD2 (Caso excepcional)
+*/
+
+--SCD2
+if (@DescripcionActual<>@Descripcion or @PorcentajeActual<>@Porcentaje or @TipoActual<>@Tipo
+or @CategoriaActual<>@Categoria)
+begin
+	update DimPromocion set Activo=0, fechafin=getdate() 
+	where PromocionKey=@PromocionKey
+
+	insert into DimPromocion(PromocionID, Descripcion, Porcentaje, Tipo, Categoria)
+	values(@PromocionID, @Descripcion, @Porcentaje, @Tipo, @Categoria)
+end
+end
+go
+
+--Actualizar Producto
+CREATE OR ALTER   procedure [dbo].[ActualizarProductos](@ProductoKey int, 
+@Nombre varchar(50), @NumeroProducto varchar(25), @Color varchar(50), @LineaProducto char(50),
+@Clase char(50), @Estilo char(50), @PrecioLista float, @Subcategoria varchar(50), 
+@Categoria varchar(50), @Modelo varchar(50))
+AS
+begin
+
+declare @NombreActual varchar(50), 
+		@NumeroProductoActual varchar(25), 
+		@ColorActual varchar(50), 
+		@LineaProductoActual char(50),
+		@ClaseActual char(50), 
+		@EstiloActual char(50), 
+		@PrecioListaActual float, 
+		@SubcategoriaActual varchar(50), 
+		@CategoriaActual varchar(50), 
+		@ModeloActual varchar(50),
+		@ProductoID int
+
+select @NombreActual = Nombre, 
+		@NumeroProductoActual =NumeroProducto , 
+		@ColorActual =Color, 
+		@LineaProductoActual =LineaProducto ,
+		@ClaseActual =Clase, 
+		@EstiloActual =Estilo, 
+		@PrecioListaActual =PrecioLista, 
+		@SubcategoriaActual =Subcategoria, 
+		@CategoriaActual =Categoria, 
+		@ModeloActual =Modelo,
+		@ProductoID=ProductID
+from DimProducto where ProductoKey=@ProductoKey
+
+/*
+Todos los campos se consideraran SCD1
+*/
+
+--SCD1
+if (@NombreActual<>@Nombre or @NumeroProductoActual<>@NumeroProducto or @ColorActual=@Color
+or @LineaProductoActual<>@LineaProducto or @ClaseActual<>@Clase or @EstiloActual<>@Estilo
+or @PrecioListaActual<>@PrecioLista or @SubcategoriaActual<>@Subcategoria or
+@CategoriaActual<>@Categoria or @ModeloActual<>@Modelo) 
+
+	UPDATE DimProducto set Nombre=@Nombre, NumeroProducto=@NumeroProducto, Color=@Color,
+		LineaProducto=@LineaProducto, Clase=@Clase, Estilo=@Estilo,
+		PrecioLista=@PrecioLista, Subcategoria=@Subcategoria, Categoria=@Categoria,
+		Modelo=@Modelo
+	where ProductoKey=@ProductoKey
+
+end
+go
+
+--Actualizar Cliente
+CREATE OR ALTER   procedure [dbo].[ActualizarClientes](@ClienteKey int, 
+@PrimerNombre varchar(50), @SegundoNombre varchar(50), @Apellido varchar(50), 
+@TipoPersona varchar(50))
+AS
+begin
+
+declare @PrimerNombreActual varchar(50), 
+		@SegundoNombreActual varchar(50), 
+		@ApellidoActual varchar(50), 
+		@TipoPersonaActual varchar(50),
+		@ClienteID int
+
+select @PrimerNombreActual = PrimerNombre, 
+		@SegundoNombreActual =SegundoNombre, 
+		@ApellidoActual = Apellido, 
+		@TipoPersonaActual =TipoPersona,
+		@ClienteID=ClienteID
+from DimCliente where ClienteKey=@ClienteKey
+
+/*
+Todos los campos se consideraran SCD1
+*/
+
+--SCD1
+if (@PrimerNombreActual<>@PrimerNombre or @SegundoNombreActual<>@SegundoNombre 
+or @ApellidoActual=@Apellido or @TipoPersonaActual<>@TipoPersona) 
+
+	UPDATE DimCliente set PrimerNombre=@PrimerNombre, SegundoNombre=@SegundoNombre, 
+		Apellido=@Apellido, TipoPersona=@TipoPersona
+	where ClienteKey=@ClienteKey
+
+end

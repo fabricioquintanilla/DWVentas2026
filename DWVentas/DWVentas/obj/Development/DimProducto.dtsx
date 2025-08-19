@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="DimProducto"
   DTS:PackageType="5"
-  DTS:VersionBuild="6"
-  DTS:VersionGUID="{A2BACEC3-33C8-4193-A705-CD5AD262637D}">
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{90A0F2C0-1677-48FE-8BA9-D17EB0AF0F7E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACDU6tNbtkgt3ee6m6XG0OMN2GTX7Mc4j1H1bAB4zvRjgAAAAAOgAAAAAIAACAAAAC3kFAN8mA561uQdSvFVZ4QlRX+za3pX8AYUGqRdaf1/iAAAAAlMr+a1EMLZkyGZVhdX88TyL8qgPORv52HSWHHNWDTUEAAAAAreonnW0GoaoUj/crUj3obpMqByv7ZkMuyVU6UVRWhRM0jW8TOSHtbgUF42h79eyO+6qc1vaujCSyPxDSxN/fO</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACZb8CaLD++6YNj9T9jqrmpo9xdQYZltMaUbJ/H5UWFzAAAAAAOgAAAAAIAACAAAAB6V0GMsNZFuOswLIaDGJC9I1eIDXGKfmK4LRu2QsojnyAAAACYH2MN7dnMnCZa8fTP5WbXfHBaoAHEI5R5/Oao5KTaY0AAAABRk84HgVrnO5OJWQztpQEju17sWufe9rRcBivA8r+3Lc+vllvHk22jCUfjO7zS3dFcG/NyQnk3AzRD2KbsIb0H</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,24 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC2qt2pgpsmiIj2IY8nJTtqxFVhGUGcwersCQDFP8yQdgAAAAAOgAAAAAIAACAAAAArd144WbuQHeKw1/i7YxztuDwYHAVreXv8MY/TxME+8SAAAADxfmv3wqqA6quhY0Z+9s6yyprR+M2mEmnKXK33ZT4APUAAAAD/lhDc6j/YPpq1grAIEF1UX5fuGy1h3o+CpthUCMJkMdLI0zgTGbqs636IFrQPMcd8dZ/nZXqU8eRRdsJne1wl</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC0V8/DH5rxcp3TMvUbjvV2+6jhDavwXlJi2VvSeGmKdAAAAAAOgAAAAAIAACAAAAC6s/078gmt4dLTBk8vIkcOsSdC6r+tUnBthTyHsCOQnyAAAAB2bq6rRMdJICgL9JxRA2r981qsfVYfjGT2IzOmq60mrkAAAAB+WSSf10f/C3j6CVvevY57SNDDsl0y8w6ipeg7Te7HvXvbbIe4TQRdKzJccULpplONRrDx1Yg4nGgQ83zVFS38</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.DWVentas20250407.sa1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{B9705758-982F-4B9E-8BFF-5CB1F4B510E4}"
+      DTS:ObjectName="localhost.DWVentas20250407.sa1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=DWVentas20250407;Provider=SQLNCLI11.1;Persist Security Info=True;Application Name=SSIS-DimProducto-{B9705758-982F-4B9E-8BFF-5CB1F4B510E4}localhost.DWVentas20250407.sa1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACw2Goe3pBw3CR9V9s+w8+n3D6gKqblqvNyW5cwJPKqEQAAAAAOgAAAAAIAACAAAADUtNspdOmlQpgBvY4YxQ5HPf0xOR95WSVFYzhHfq9n6yAAAABH/0mysPXHlray8cB5fNWCCcqUI6gYGL3gEX2zEe/+4EAAAABitBGLU168O/mWxJPVrzpX5cxsOtef/cZMJCnuN9TEA+nuL2NOjlzAlYCwjGcEknLLFd59wedVFlTZyPpQ+3Yw</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -53,6 +70,7 @@
       DTS:refId="Package\Limpiar DimProducto"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{71AAAF20-4476-4F77-86AB-B462228E0628}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -80,6 +98,464 @@
         <pipeline
           version="1">
           <components>
+            <component
+              refId="Package\Llenar DimProducto\Actualizar Productos"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
+              name="Actualizar Productos"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">exec ActualizarProductos ?,?,?,?,?,?,?,?,?,?,?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Llenar DimProducto\Actualizar Productos.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.DWVentas20250407.sa1]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.DWVentas20250407.sa1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input]"
+                  errorOrTruncationOperation="Command Execution"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Command Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].Columns[ListPrice]"
+                      cachedDataType="cy"
+                      cachedName="ListPrice"
+                      externalMetadataColumnId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].ExternalColumns[@PrecioLista]"
+                      lineageId="Package\Llenar DimProducto\Leer tablas de productos.Outputs[ADO NET Source Output].Columns[ListPrice]" />
+                    <inputColumn
+                      refId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].Columns[ProductoKey]"
+                      cachedDataType="i4"
+                      cachedName="ProductoKey"
+                      externalMetadataColumnId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].ExternalColumns[@ProductoKey]"
+                      lineageId="Package\Llenar DimProducto\Buscar ProductoKey.Outputs[Lookup Match Output].Columns[ProductoKey]" />
+                    <inputColumn
+                      refId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].Columns[Nombre Nuevo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Nombre Nuevo"
+                      externalMetadataColumnId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].ExternalColumns[@Nombre]"
+                      lineageId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Output].Columns[Nombre Nuevo]" />
+                    <inputColumn
+                      refId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].Columns[ProductNumber Nuevo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="25"
+                      cachedName="ProductNumber Nuevo"
+                      externalMetadataColumnId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].ExternalColumns[@NumeroProducto]"
+                      lineageId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Output].Columns[ProductNumber Nuevo]" />
+                    <inputColumn
+                      refId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].Columns[Color Nuevo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Color Nuevo"
+                      externalMetadataColumnId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].ExternalColumns[@Color]"
+                      lineageId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Output].Columns[Color Nuevo]" />
+                    <inputColumn
+                      refId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].Columns[LineaProducto Nuevo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="LineaProducto Nuevo"
+                      externalMetadataColumnId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].ExternalColumns[@LineaProducto]"
+                      lineageId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Output].Columns[LineaProducto Nuevo]" />
+                    <inputColumn
+                      refId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].Columns[Clase Nuevo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Clase Nuevo"
+                      externalMetadataColumnId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].ExternalColumns[@Clase]"
+                      lineageId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Output].Columns[Clase Nuevo]" />
+                    <inputColumn
+                      refId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].Columns[Estilo Nuevo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Estilo Nuevo"
+                      externalMetadataColumnId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].ExternalColumns[@Estilo]"
+                      lineageId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Output].Columns[Estilo Nuevo]" />
+                    <inputColumn
+                      refId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].Columns[Subcategoria Nuevo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Subcategoria Nuevo"
+                      externalMetadataColumnId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].ExternalColumns[@Subcategoria]"
+                      lineageId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Output].Columns[Subcategoria Nuevo]" />
+                    <inputColumn
+                      refId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].Columns[Categoria Nuevo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Categoria Nuevo"
+                      externalMetadataColumnId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].ExternalColumns[@Categoria]"
+                      lineageId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Output].Columns[Categoria Nuevo]" />
+                    <inputColumn
+                      refId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].Columns[Modelo Nuevo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Modelo Nuevo"
+                      externalMetadataColumnId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].ExternalColumns[@Modelo]"
+                      lineageId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Output].Columns[Modelo Nuevo]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].ExternalColumns[@ProductoKey]"
+                      dataType="i4"
+                      name="@ProductoKey">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].ExternalColumns[@Nombre]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="@Nombre">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].ExternalColumns[@NumeroProducto]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="@NumeroProducto">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].ExternalColumns[@Color]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="@Color">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].ExternalColumns[@LineaProducto]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="@LineaProducto">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].ExternalColumns[@Clase]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="@Clase">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].ExternalColumns[@Estilo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="@Estilo">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].ExternalColumns[@PrecioLista]"
+                      dataType="r8"
+                      name="@PrecioLista">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].ExternalColumns[@Subcategoria]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="@Subcategoria">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].ExternalColumns[@Categoria]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="@Categoria">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input].ExternalColumns[@Modelo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="@Modelo">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Llenar DimProducto\Actualizar Productos.Outputs[OLE DB Command Output]"
+                  exclusionGroup="1"
+                  name="OLE DB Command Output"
+                  synchronousInputId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Llenar DimProducto\Actualizar Productos.Outputs[OLE DB Command Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Command Error Output"
+                  synchronousInputId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Llenar DimProducto\Actualizar Productos.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Llenar DimProducto\Actualizar Productos.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Llenar DimProducto\Actualizar Productos.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Llenar DimProducto\Actualizar Productos.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Llenar DimProducto\Buscar ProductoKey"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Buscar ProductoKey"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DimProducto]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimProducto] where Activo=1) [refTable]
+where [refTable].[ProductID] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="ProductoKey" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ProductID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Nombre" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="NumeroProducto" dataType="DT_STR" length="25" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Color" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LineaProducto" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Clase" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Estilo" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="PrecioLista" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Subcategoria" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Categoria" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Modelo" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Activo" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FechaInicio" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FechaFin" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Llenar DimProducto\Leer tablas de productos.Outputs[ADO NET Source Output].Columns[ProductID]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Llenar DimProducto\Buscar ProductoKey.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.DWVentas20250407.sa1]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.DWVentas20250407.sa1]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Llenar DimProducto\Buscar ProductoKey.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Llenar DimProducto\Buscar ProductoKey.Inputs[Lookup Input].Columns[ProductID]"
+                      cachedDataType="i4"
+                      cachedName="ProductID"
+                      lineageId="Package\Llenar DimProducto\Leer tablas de productos.Outputs[ADO NET Source Output].Columns[ProductID]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">ProductID</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Llenar DimProducto\Buscar ProductoKey.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Llenar DimProducto\Buscar ProductoKey.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Llenar DimProducto\Buscar ProductoKey.Outputs[Lookup Match Output].Columns[ProductoKey]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\Llenar DimProducto\Buscar ProductoKey.Outputs[Lookup Match Output].Columns[ProductoKey]"
+                      name="ProductoKey"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">ProductoKey</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Llenar DimProducto\Buscar ProductoKey.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Llenar DimProducto\Buscar ProductoKey.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Llenar DimProducto\Buscar ProductoKey.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Llenar DimProducto\Buscar ProductoKey.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Llenar DimProducto\Buscar ProductoKey.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Llenar DimProducto\Buscar ProductoKey.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Llenar DimProducto\Buscar ProductoKey.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Llenar DimProducto\Buscar ProductoKey.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
             <component
               refId="Package\Llenar DimProducto\Cargar en DimProducto"
               componentClassID="Microsoft.ManagedComponentHost"
@@ -297,6 +773,308 @@
                       refId="Package\Llenar DimProducto\Cargar en DimProducto.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\Llenar DimProducto\Cargar en DimProducto.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Llenar DimProducto\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Llenar DimProducto\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Llenar DimProducto\Data Conversion.Inputs[Data Conversion Input].Columns[Nombre]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Nombre"
+                      lineageId="Package\Llenar DimProducto\Leer tablas de productos.Outputs[ADO NET Source Output].Columns[Nombre]" />
+                    <inputColumn
+                      refId="Package\Llenar DimProducto\Data Conversion.Inputs[Data Conversion Input].Columns[ProductNumber]"
+                      cachedDataType="wstr"
+                      cachedLength="25"
+                      cachedName="ProductNumber"
+                      lineageId="Package\Llenar DimProducto\Leer tablas de productos.Outputs[ADO NET Source Output].Columns[ProductNumber]" />
+                    <inputColumn
+                      refId="Package\Llenar DimProducto\Data Conversion.Inputs[Data Conversion Input].Columns[Color]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Color"
+                      lineageId="Package\Llenar DimProducto\Leer tablas de productos.Outputs[ADO NET Source Output].Columns[Color]" />
+                    <inputColumn
+                      refId="Package\Llenar DimProducto\Data Conversion.Inputs[Data Conversion Input].Columns[LineaProducto]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="LineaProducto"
+                      lineageId="Package\Llenar DimProducto\Leer tablas de productos.Outputs[ADO NET Source Output].Columns[LineaProducto]" />
+                    <inputColumn
+                      refId="Package\Llenar DimProducto\Data Conversion.Inputs[Data Conversion Input].Columns[Clase]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Clase"
+                      lineageId="Package\Llenar DimProducto\Leer tablas de productos.Outputs[ADO NET Source Output].Columns[Clase]" />
+                    <inputColumn
+                      refId="Package\Llenar DimProducto\Data Conversion.Inputs[Data Conversion Input].Columns[Estilo]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Estilo"
+                      lineageId="Package\Llenar DimProducto\Leer tablas de productos.Outputs[ADO NET Source Output].Columns[Estilo]" />
+                    <inputColumn
+                      refId="Package\Llenar DimProducto\Data Conversion.Inputs[Data Conversion Input].Columns[Subcategoria]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Subcategoria"
+                      lineageId="Package\Llenar DimProducto\Leer tablas de productos.Outputs[ADO NET Source Output].Columns[Subcategoria]" />
+                    <inputColumn
+                      refId="Package\Llenar DimProducto\Data Conversion.Inputs[Data Conversion Input].Columns[Categoria]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Categoria"
+                      lineageId="Package\Llenar DimProducto\Leer tablas de productos.Outputs[ADO NET Source Output].Columns[Categoria]" />
+                    <inputColumn
+                      refId="Package\Llenar DimProducto\Data Conversion.Inputs[Data Conversion Input].Columns[Modelo]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Modelo"
+                      lineageId="Package\Llenar DimProducto\Leer tablas de productos.Outputs[ADO NET Source Output].Columns[Modelo]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Llenar DimProducto\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Output].Columns[Nombre Nuevo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Output].Columns[Nombre Nuevo]"
+                      name="Nombre Nuevo"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Llenar DimProducto\Leer tablas de productos.Outputs[ADO NET Source Output].Columns[Nombre]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Output].Columns[ProductNumber Nuevo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="25"
+                      lineageId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Output].Columns[ProductNumber Nuevo]"
+                      name="ProductNumber Nuevo"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Llenar DimProducto\Leer tablas de productos.Outputs[ADO NET Source Output].Columns[ProductNumber]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Output].Columns[Color Nuevo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Output].Columns[Color Nuevo]"
+                      name="Color Nuevo"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Llenar DimProducto\Leer tablas de productos.Outputs[ADO NET Source Output].Columns[Color]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Output].Columns[LineaProducto Nuevo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Output].Columns[LineaProducto Nuevo]"
+                      name="LineaProducto Nuevo"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Llenar DimProducto\Leer tablas de productos.Outputs[ADO NET Source Output].Columns[LineaProducto]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Output].Columns[Clase Nuevo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Output].Columns[Clase Nuevo]"
+                      name="Clase Nuevo"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Llenar DimProducto\Leer tablas de productos.Outputs[ADO NET Source Output].Columns[Clase]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Output].Columns[Estilo Nuevo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Output].Columns[Estilo Nuevo]"
+                      name="Estilo Nuevo"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Llenar DimProducto\Leer tablas de productos.Outputs[ADO NET Source Output].Columns[Estilo]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Output].Columns[Subcategoria Nuevo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Output].Columns[Subcategoria Nuevo]"
+                      name="Subcategoria Nuevo"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Llenar DimProducto\Leer tablas de productos.Outputs[ADO NET Source Output].Columns[Subcategoria]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Output].Columns[Categoria Nuevo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Output].Columns[Categoria Nuevo]"
+                      name="Categoria Nuevo"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Llenar DimProducto\Leer tablas de productos.Outputs[ADO NET Source Output].Columns[Categoria]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Output].Columns[Modelo Nuevo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Output].Columns[Modelo Nuevo]"
+                      name="Modelo Nuevo"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Llenar DimProducto\Leer tablas de productos.Outputs[ADO NET Source Output].Columns[Modelo]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Llenar DimProducto\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -654,9 +1432,24 @@ on pm.ProductModelID=p.ProductModelID</property>
           <paths>
             <path
               refId="Package\Llenar DimProducto.Paths[ADO NET Source Output]"
-              endId="Package\Llenar DimProducto\Cargar en DimProducto.Inputs[ADO NET Destination Input]"
+              endId="Package\Llenar DimProducto\Buscar ProductoKey.Inputs[Lookup Input]"
               name="ADO NET Source Output"
               startId="Package\Llenar DimProducto\Leer tablas de productos.Outputs[ADO NET Source Output]" />
+            <path
+              refId="Package\Llenar DimProducto.Paths[Data Conversion Output]"
+              endId="Package\Llenar DimProducto\Actualizar Productos.Inputs[OLE DB Command Input]"
+              name="Data Conversion Output"
+              startId="Package\Llenar DimProducto\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Llenar DimProducto.Paths[Lookup Match Output]"
+              endId="Package\Llenar DimProducto\Data Conversion.Inputs[Data Conversion Input]"
+              name="Lookup Match Output"
+              startId="Package\Llenar DimProducto\Buscar ProductoKey.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Llenar DimProducto.Paths[Lookup No Match Output]"
+              endId="Package\Llenar DimProducto\Cargar en DimProducto.Inputs[ADO NET Destination Input]"
+              name="Lookup No Match Output"
+              startId="Package\Llenar DimProducto\Buscar ProductoKey.Outputs[Lookup No Match Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -733,41 +1526,159 @@ on pm.ProductModelID=p.ProductModelID</property>
     design-time-name="Package\Llenar DimProducto">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="194,42"
-          Id="Package\Llenar DimProducto\Cargar en DimProducto"
-          TopLeft="520,315" />
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="200,42"
           Id="Package\Llenar DimProducto\Leer tablas de productos"
           TopLeft="204,110" />
+        <NodeLayout
+          Size="194,42"
+          Id="Package\Llenar DimProducto\Cargar en DimProducto"
+          TopLeft="550,365" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Llenar DimProducto\Buscar ProductoKey"
+          TopLeft="409,203" />
         <EdgeLayout
           Id="Package\Llenar DimProducto.Paths[ADO NET Source Output]"
           TopLeft="304,152">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="313,163"
+              EndConnector="194.5,51"
               Start="0,0"
-              End="313,155.5">
+              End="194.5,43.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,77.5" />
+                    End="0,21.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,77.5"
-                    Point2="0,81.5"
-                    Point3="4,81.5" />
+                    Point1="0,21.5"
+                    Point2="0,25.5"
+                    Point3="4,25.5" />
                   <mssgle:LineSegment
-                    End="309,81.5" />
+                    End="190.5,25.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="309,81.5"
-                    Point2="313,81.5"
-                    Point3="313,85.5" />
+                    Point1="190.5,25.5"
+                    Point2="194.5,25.5"
+                    Point3="194.5,29.5" />
                   <mssgle:LineSegment
-                    End="313,155.5" />
+                    End="194.5,43.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Llenar DimProducto.Paths[Lookup No Match Output]"
+          TopLeft="498.5,245">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="148.5,120"
+              Start="0,0"
+              End="148.5,112.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,56" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,56"
+                    Point2="0,60"
+                    Point3="4,60" />
+                  <mssgle:LineSegment
+                    End="144.5,60" />
+                  <mssgle:CubicBezierSegment
+                    Point1="144.5,60"
+                    Point2="148.5,60"
+                    Point3="148.5,64" />
+                  <mssgle:LineSegment
+                    End="148.5,112.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="18.44361328125,65,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Llenar DimProducto\Data Conversion"
+          TopLeft="174,306" />
+        <EdgeLayout
+          Id="Package\Llenar DimProducto.Paths[Lookup Match Output]"
+          TopLeft="470,245">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-215.5,61"
+              Start="0,0"
+              End="-215.5,53.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.7242524916944" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.7242524916944"
+                    Point2="0,24.7242524916944"
+                    Point3="-4,24.7242524916944" />
+                  <mssgle:LineSegment
+                    End="-211.5,24.7242524916944" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-211.5,24.7242524916944"
+                    Point2="-215.5,24.7242524916944"
+                    Point3="-215.5,28.7242524916944" />
+                  <mssgle:LineSegment
+                    End="-215.5,53.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-155.94138671875,29.7242524916944,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="180,42"
+          Id="Package\Llenar DimProducto\Actualizar Productos"
+          TopLeft="149,422" />
+        <EdgeLayout
+          Id="Package\Llenar DimProducto.Paths[Data Conversion Output]"
+          TopLeft="254.5,348">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-15.5,74"
+              Start="0,0"
+              End="-15.5,66.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33"
+                    Point2="0,37"
+                    Point3="-4,37" />
+                  <mssgle:LineSegment
+                    End="-11.5,37" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-11.5,37"
+                    Point2="-15.5,37"
+                    Point3="-15.5,41" />
+                  <mssgle:LineSegment
+                    End="-15.5,66.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -790,6 +1701,29 @@ on pm.ProductModelID=p.ProductModelID</property>
   <PipelineComponentMetadata
     design-time-name="Package\Llenar DimProducto\Leer tablas de productos">
     <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Llenar DimProducto\Buscar ProductoKey">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">true</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimProducto]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
       <Property>
         <Name>DataSourceViewID</Name>
       </Property>

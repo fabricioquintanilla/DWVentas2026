@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="DimVendedor"
   DTS:PackageType="5"
-  DTS:VersionBuild="20"
-  DTS:VersionGUID="{E3EF48D4-8E0C-4940-88E5-5D3D214DAB89}">
+  DTS:VersionBuild="21"
+  DTS:VersionGUID="{E834DB37-06ED-48A9-875F-8B6B9D6D0A60}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABAbtWni1pRnO4aQ+AmzWqHrV7BwzYy11wPWbes5IfhxAAAAAAOgAAAAAIAACAAAAC4FObEFBQ9IdeHgT2ByKlo0XzvpV9MPucXcR66VG9SLSAAAAB0UqgInm+vtOTJL3MCD42aAmY1qs+IvMKpc4gB8LVeFUAAAAD3IcEH05gL/akk7xHQblhr+19ultc8z31gkI3ZY1gRLzuP0GBGsUtCgVC5xpaDgvemYgO08rLgprwIOUpcACCj</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA4jSLTe2tqZTmbteOvIz65kMCYj6fesD9C0RPQU5I3ewAAAAAOgAAAAAIAACAAAAB3F7ke/eT6f1QpblFlvF41zdfHR/sXy245j/qNLN4MkiAAAACDWKMofPpDzIdXYTBubNm1WiXWWJMcWNA+cVT78Qz5XUAAAABp19x6qkTLlObXtpljU21qr3kphBc1gw8iJQE/GNwOUY1OIY4H8TQkZRkDBdDWDHBEGStrvR/Oel5YvHbpYFYS</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAILowjLOfw2z5k7iRtJv7nG4gu8oXHf4sFan0FOIjNdwAAAAAOgAAAAAIAACAAAABOz/2Yf8YVMREVtqB/LNFHfWDFsbueGT2IUif7kvngySAAAAAg0LnkB0EmPZTzs4cO/3sSYH4u117rA4Ydw+v+JyUXgUAAAABXt7LiJXN3ErmX1w0argTJOVMgDt+ARyDyA0Nra+joGlOWoqOUA5Am1LOL1XAJaQjpc75Bb09g10rzLNk5mv8X</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA+VrxZ0uybS594USecPOBBxeGQTqMx32LVam1Nshm28gAAAAAOgAAAAAIAACAAAAC/AyrqtiohnnCEG58zleQIeAtP9qaJfxTyHdOF73qwJiAAAACHqsYk6RtjoaHUEZ9JYpugibI9wspyJ/3zrPf1tJAod0AAAAA2+4+0SnEw9YYoiYckTvefeAvPEpIr2aGnqXfRnoRRCA1GL9ETfYkxP74lXkUF2mTVx1RO86ovk5s0ZggCn87z</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -59,7 +59,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABd9GopqbX+rsIeZ9sNwKBP8tZCSjWErCMbk1Q1dszWCgAAAAAOgAAAAAIAACAAAACmXXG6iZ5V34ieOFxrkS6J0rK33QddN9zehufDYvG70SAAAACtQ6PaFLaYCztIOJfgwfmlkyD29ehhX/LLEgCzuj5OwEAAAAAagZxWT12O5SqFKWp6utabQOqI0LRHpkV97y1R4eIUXSKfdVXxWAoK5XUYvA3+xvUT4KaLZZRFKvuFi9/+n+Yy</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsLcJ+xbRYkCIgcspPpu13AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABGHbPNvxrVDtzFFzgddiYMwJUWvtPRGFFI0lPYdth0JgAAAAAOgAAAAAIAACAAAABTnCQdUYnGcA1QOwNpTxKDIZh3h82CP1dB/Ilq6rBXUSAAAABTP2OeZPtVn8ib7I5RgZ7LmWwEhet07eY8vrPeaHuVzkAAAAALRVNOnxMgC1dqkG87AQymjPL9GjtWnOLIBwf2V5wU5p/C68SbSJZVQzJ+qF0EsmH8d3iiuVurcejQN5P8J8zK</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1063,7 +1063,43 @@ on p.BusinessEntityID=sp.BusinessEntityID</property>
         <NodeLayout
           Size="255,42"
           Id="Package\Llenar DimVendedor\Cargar Datos Nuevos DimVendedor"
-          TopLeft="171,365" />
+          TopLeft="127,387" />
+        <EdgeLayout
+          Id="Package\Llenar DimVendedor.Paths[Lookup No Match Output]"
+          TopLeft="295,243">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-40.5,144"
+              Start="0,0"
+              End="-40.5,136.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,54.2857142857143" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,54.2857142857143"
+                    Point2="0,58.2857142857143"
+                    Point3="-4,58.2857142857143" />
+                  <mssgle:LineSegment
+                    End="-36.5,58.2857142857143" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-36.5,58.2857142857143"
+                    Point2="-40.5,58.2857142857143"
+                    Point3="-40.5,62.2857142857143" />
+                  <mssgle:LineSegment
+                    End="-40.5,136.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-84.9250390625,63.2857142857143,129.350078125,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Llenar DimVendedor.Paths[Lookup Match Output]"
           TopLeft="359,243">
@@ -1168,30 +1204,6 @@ on p.BusinessEntityID=sp.BusinessEntityID</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Llenar DimVendedor.Paths[Lookup No Match Output]"
-          TopLeft="296.75,243">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,122"
-              Start="0,0"
-              End="0,114.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,114.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-64.6750390625,49.25,129.350078125,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -1201,7 +1213,7 @@ on p.BusinessEntityID=sp.BusinessEntityID</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">true</Value>
+          type="q2:string">true</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -1219,7 +1231,7 @@ on p.BusinessEntityID=sp.BusinessEntityID</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Llenar DimVendedor\Leer Tabla Vendedores">
+    design-time-name="Package\Llenar DimVendedor\Cargar Datos Nuevos DimVendedor">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1227,7 +1239,7 @@ on p.BusinessEntityID=sp.BusinessEntityID</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Llenar DimVendedor\Cargar Datos Nuevos DimVendedor">
+    design-time-name="Package\Llenar DimVendedor\Leer Tabla Vendedores">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

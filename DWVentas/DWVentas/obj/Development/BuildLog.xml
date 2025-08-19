@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>DWVentas</Name>
-    <LastWriteTime>2025-07-22T03:03:53.6858925Z</LastWriteTime>
+    <LastWriteTime>2025-08-19T03:28:03.5029453Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -13,27 +13,27 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>DimVendedor.dtsx</Name>
-      <LastWriteTime>2025-07-29T03:22:18.2052016Z</LastWriteTime>
+      <LastWriteTime>2025-08-15T03:04:55.9949441Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>DimProducto.dtsx</Name>
-      <LastWriteTime>2025-07-29T03:34:46.5377818Z</LastWriteTime>
+      <LastWriteTime>2025-08-19T03:22:20.7290245Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>DimCliente.dtsx</Name>
-      <LastWriteTime>2025-07-29T03:30:15.9055425Z</LastWriteTime>
+      <LastWriteTime>2025-08-19T03:28:00.2958906Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>DimPromocion.dtsx</Name>
-      <LastWriteTime>2025-07-29T03:35:40.7105652Z</LastWriteTime>
+      <LastWriteTime>2025-08-19T03:22:20.7575473Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>DimTerritorioVentas.dtsx</Name>
-      <LastWriteTime>2025-07-29T03:36:19.4063481Z</LastWriteTime>
+      <LastWriteTime>2025-08-15T03:04:49.3856785Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -43,7 +43,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>FactVentas.dtsx</Name>
-      <LastWriteTime>2025-07-15T03:44:41.7030818Z</LastWriteTime>
+      <LastWriteTime>2025-08-19T03:28:03.4905379Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
