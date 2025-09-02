@@ -296,3 +296,34 @@ or @ApellidoActual=@Apellido or @TipoPersonaActual<>@TipoPersona)
 	where ClienteKey=@ClienteKey
 
 end
+
+
+/*Crear tabla de parametros*/
+
+create table Parametros(
+ID int not null primary key identity(1,1),
+Nombre varchar(100) not null,
+Valor varchar(100) not null)
+go
+
+create or alter function LeerParametros(@Nombre varchar(100))
+returns varchar
+as
+begin
+	declare @valor varchar(100)=''
+
+	select @valor=valor from parametros where nombre=@Nombre
+	return @valor
+end
+go
+
+create or alter procedure ActualizarParametro(@Nombre varchar(100), @valor varchar(100))
+as
+begin
+	update parametros set valor=@valor where nombre=@nombre
+end
+
+insert into parametros(nombre,valor) values('FechaUltimaEjecucion',DATEADD(day,-2,GETDATE()))
+
+
+select * from parametros
