@@ -327,3 +327,39 @@ insert into parametros(nombre,valor) values('FechaUltimaEjecucion',DATEADD(day,-
 
 
 select * from parametros
+
+create table FactVentasSnapshot
+(TerritorioVentaKey int not null foreign key references 
+DimTerritorioVenta(TerritorioVentaKey),
+VendedorKey int not null foreign key references
+DimVendedor(VendedorKey),
+PromocionKey int not null foreign key references
+DimPromocion(PromocionKey),
+ClienteKey int not null foreign key references
+DimCliente(ClienteKey),
+ProductoKey int not null foreign key references
+DimProducto(ProductoKey),
+FechaOrdenKey int not null foreign key references
+DimTiempo(TiempoKey),
+FechaEntregaKey int not null foreign key references
+DimTiempo(TiempoKey),
+FechaEnvioKey int not null foreign key references
+DimTiempo(TiempoKey),
+Cantidad int not null, 
+PrecioUnitario float not null, 
+Descuento float not null, 
+TotalLinea float not null,
+NumeroOrden varchar(25) not null,
+FechaCarga datetime not null default getdate())
+go
+
+select * from factventasSnapshot
+
+update factventasSnapshot set fechacarga=convert(datetime,'03/09/2025',103)
+
+if exists (select 1 from FactVentasSnapshot where cast(FechaCarga as date)=cast(getdate() as date))
+begin
+	delete factventasSnapshot
+end
+
+select cast(FechaCarga as date), cast(getdate() as date) from FactVentasSnapshot
